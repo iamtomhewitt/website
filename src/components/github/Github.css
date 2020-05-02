@@ -1,45 +1,20 @@
-#githubContainer {
-  padding: 10px 0;
-  text-align: center;
-  font-size: 18px;
+.reposContainer {
+	text-align: center;
+	font-size: 18px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 25px 200px;
 }
 
-#githubContainer h1 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+h1 {
+	padding: 10px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	text-align: center;
 }
 
-#githubContainer p {
-  color: #999;
-}
-
-#repos-table {
-  text-align: center;
-  border-collapse: collapse;
-  border: 3px solid #ddd;
-  width: 90%;
-  margin: auto;
-}
-
-#repos-table td, #repos-table th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#repos-table tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-#repos-table thead {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #1b7eff;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-#repos-table thead .repo {
-  width: 200px;
+.noRepos {
+	text-align: center;
+	font-size: 28px;
+	padding: 10px;
 }

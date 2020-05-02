@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './Tile.css';
+import './ExperienceTile.css';
 
-export default class Tile extends React.Component {
+export default class ExperienceTile extends React.Component {
 	render() {
 		var fontSize = {
 			fontSize: this.props.fontSize + 'px'

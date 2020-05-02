@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Tile from "./Tile";
+import ExperienceTile from "./ExperienceTile";
 import wh from '../../images/william-hill.png';
 import cgi from '../../images/cgi.png';
 import ntu from '../../images/ntu.png';
@@ -12,7 +12,7 @@ export default class Experience extends Component {
 			<>
 				<h1 id="title">I've worked at</h1>
 				<div id="container">
-					<Tile
+					<ExperienceTile
 						jobTitle="Developer"
 						company="William Hill"
 						description="Working in Retail, currently working on the software for self service betting terminals. During the coronavirus outbreak I have been working on William Hill's Bingo website."
@@ -21,7 +21,7 @@ export default class Experience extends Component {
 						fontSize="16"
 					/>
 
-					<Tile
+					<ExperienceTile
 						jobTitle="Graduate Developer"
 						company="CGI"
 						description="Responsible for an entire customer relationship type subsystem, using a variety of tools and software such as Java, SQL, JSP, Perl, Hibernate, VB, Remedy, Crystal Reports. Subsystem compromises of a workflow tool, an in-house website and a reporting tool."
@@ -30,7 +30,7 @@ export default class Experience extends Component {
 						fontSize="14"
 					/>
 
-					<Tile
+					<ExperienceTile
 						jobTitle="Analyst Programmer"
 						company="CGI"
 						description="Working in the Defence Sector at CGI, as part of an industrial placement year for university."
@@ -39,7 +39,7 @@ export default class Experience extends Component {
 						fontSize="16"
 					/>
 
-					<Tile
+					<ExperienceTile
 						jobTitle="Student Ambassador"
 						company="Nottingham Trent University"
 						description="Personally invited onto the Student Ambassador scheme due to high achievements from first year. Supported first year students in programming sessions and one on one mentoring sessions, as well as helping out and leading groups of potential students at university open days."
