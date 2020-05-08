@@ -13,19 +13,20 @@ export default class Github extends Component {
 	}
 
 	componentDidMount() {
-		fetch("https://api.github.com/users/iamtomhewitt/repos")
+		fetch("https://api.github.com/users/iamtomhewitt/repos?sort=updated")
 			.then(response => response.json())
 			.then(data => this.setState({ repos: data }));
 	}
 
 	render() {
-		if (this.state.repos.length > 0) {
+		const { repos } = this.state;
+		if (repos.length > 0) {
 			return (
 				<div>
 					<h1>I've built</h1>
 
 					<div className="reposContainer">
-						{this.state.repos.map((repo) => {
+						{repos.map((repo) => {
 							return <GithubTile
 								key={repo.name}
 								name={repo.name}
