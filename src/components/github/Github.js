@@ -34,7 +34,7 @@ export default class Github extends Component {
 								bugs={repo.open_issues}
 								stars={repo.stargazers_count}
 								forks={repo.forks}
-								url={repo.url}
+								url={repo.html_url}
 							/>
 						})}
 					</div>
