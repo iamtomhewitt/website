@@ -1,16 +1,28 @@
-#lander {
-  padding: 40px 0;
-  text-align: center;
+.Home {
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-top: 30px;
+	padding-bottom: ;
+	text-align: center;
 }
 
-#lander h1 {
-  font-weight: 600;
+.Home h1 {
+	font-weight: bold;
 }
 
-#profile img {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.Home hr {
+	background: #fff;
+	border: 0;
+	height: 3px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 90px;
+}
+
+.Home img {
+	border-radius: 50%;
+	height: 200px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 200px;
 }
