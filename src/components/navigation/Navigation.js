@@ -11,6 +11,7 @@ export default class Navigation extends Component {
 					<li><a href="#/experience">EXPERIENCE</a></li>
 					<li><a href="#/github">GITHUB</a></li>
 					<li><a href="#/contact">CONTACT</a></li>
+					<li><a href="#/about">ABOUT</a></li>
 				</ul>
 			</div>
 		)

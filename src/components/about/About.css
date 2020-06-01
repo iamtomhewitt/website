@@ -1,0 +1,17 @@
+.About {
+	margin: 0px 50px 0px 50px
+}
+
+.About hr {
+	background: #fff;
+	border: 0;
+	height: 3px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 90px;
+}
+
+.About p {
+	font-size: 20px;
+	text-align: center;
+}
