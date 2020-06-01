@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Routes from "./Routes";
-import Footer from "./components/Footer";
+import Footer from "./components/footer/Footer";
 import Navigation from "./components/navigation/Navigation";
 import "./App.css";
 
