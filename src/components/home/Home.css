@@ -7,17 +7,9 @@
 .Home h1 {
 	font-weight: bold;
 }
+
 .Home h2 {
 	font-size: 30px;
-}
-
-.Home hr {
-	background: #fff;
-	border: 0;
-	height: 3px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	width: 90px;
 }
 
 .Home img {
