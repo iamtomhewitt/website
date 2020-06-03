@@ -5,11 +5,13 @@
 	"dependencies": {
 		"emailjs-com": "^2.4.1",
 		"gh-pages": "^2.2.0",
+		"prop-types": "^15.7.2",
 		"react": "^16.13.1",
 		"react-bootstrap": "^1.0.0",
 		"react-dom": "^16.13.1",
 		"react-router-dom": "^5.1.2",
 		"react-scripts": "^3.4.1",
+		"react-social-icons": "^4.1.0",
 		"react-textfit": "^1.1.0",
 		"set-value": "^3.0.2"
 	},
@@ -51,9 +53,9 @@
 		"eslint-plugin-react": "^7.20.0",
 		"eslint-plugin-react-hooks": "^2.5.1",
 		"husky": "^1.1.2",
-		"react-social-icons": "^4.1.0",
 		"typescript": "^3.8.3",
-		"validate-commit-msg": "^2.14.0"
+		"validate-commit-msg": "^2.14.0",
+		"babel-eslint": "^8.2.6"
 	},
 	"husky": {
 		"hooks": {
