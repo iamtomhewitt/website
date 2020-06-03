@@ -1,16 +1,16 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
-import Home from "./components/home/Home";
-import PageNotFound from "./components/page-not-found/PageNotFound";
-import Experience from "./components/experience/Experience";
-import Github from "./components/github/Github";
-import Contact from "./components/contact/Contact";
-import VRPacmac from "./components/privacy policies/VRPacmac";
-import VRTurretDefence from "./components/privacy policies/VRTurretDefence";
-import JetDashVR from "./components/privacy policies/JetDashVR";
-import About from "./components/about/About";
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Home from './components/home/Home';
+import PageNotFound from './components/page-not-found/PageNotFound';
+import Experience from './components/experience/Experience';
+import Github from './components/github/Github';
+import Contact from './components/contact/Contact';
+import VRPacmac from './components/privacy policies/VRPacmac';
+import VRTurretDefence from './components/privacy policies/VRTurretDefence';
+import JetDashVR from './components/privacy policies/JetDashVR';
+import About from './components/about/About';
 
-export default () =>
+export default () => (
   <Switch>
     <Route path="/" exact component={Home} />
     <Route path="/experience" exact component={Experience} />
@@ -23,4 +23,5 @@ export default () =>
 
     { /* Catch all unmatched routes */}
     <Route component={PageNotFound} />
-  </Switch>;
+  </Switch>
+);
