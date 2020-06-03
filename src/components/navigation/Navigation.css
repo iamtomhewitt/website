@@ -23,7 +23,7 @@
 }
 
 .Navigation li:before {
-	background-color: white;
+	background-color: #E31B6C;
 	bottom: -3px;
 	content: "";
 	display: block;
@@ -38,6 +38,10 @@
 
 .Navigation li:hover:before {
 	transform: scale(1);
+}
+
+.Navigation .active {
+	color: blue;
 }
 
 .Navigation img {
