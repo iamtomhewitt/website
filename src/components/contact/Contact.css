@@ -1,14 +1,40 @@
-#title {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  text-align: center;
+.Contact .entry, form {
+	margin: auto;
+	text-align: center;
+	width: 300px;
+	padding-bottom: 40px;
 }
 
-#container p {
-  color: #999;
+.Contact .entry label {
+	display: block;
+	width: 300px;
+	text-align: left;
 }
 
-#container form {
-  margin: 0 auto;
-  max-width: 320px;
+.Contact .entry input {
+	border-radius: 10px;
+	border-style: none;
+	height: 38px;
+	outline: none;
+	padding: 0px 10px;
+	width: 300px;
+}
+
+.Contact button {
+	background-color: #E31B6C;
+	border-radius: 10px;
+	border-style: none;
+	height: 40px;
+	margin-top: 20px;
+	outline: none;
+	width: 300px;
+}
+
+.Contact button:enabled {
+	color: white;
+	font-weight: bold;
+}
+
+.Contact .required {
+	color: #E31B6C;
 }
