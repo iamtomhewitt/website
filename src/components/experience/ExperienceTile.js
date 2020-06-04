@@ -13,18 +13,18 @@ const ExperienceTile = (props) => {
   };
 
   return (
-    <div id="tile">
-      <div id="quickInfo">
-        <div id="details">
-          <div id="jobTitle">{jobTitle}</div>
-          <div id="company">{company}</div>
-          <div id="time">{time}</div>
+    <div className="tile">
+      <div className="quickInfo">
+        <div className="details">
+          <div className="jobTitle">{jobTitle}</div>
+          <div className="company">{company}</div>
+          <div className="time">{time}</div>
         </div>
-        <div id="image">
+        <div className="image">
           <img src={logo} alt="img" />
         </div>
       </div>
-      <div id="description" style={style}>{description}</div>
+      <div className="description" style={style}>{description}</div>
     </div>
   );
 };
