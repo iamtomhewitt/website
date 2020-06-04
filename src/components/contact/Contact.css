@@ -1,14 +1,22 @@
+.Contact {
+	text-align: center;
+}
+
+.Contact h1 {
+	font-weight: bold;
+}
+
 .Contact .entry, form {
 	margin: auto;
+	padding-bottom: 40px;
 	text-align: center;
 	width: 300px;
-	padding-bottom: 40px;
 }
 
 .Contact .entry label {
 	display: block;
-	width: 300px;
 	text-align: left;
+	width: 300px;
 }
 
 .Contact .entry input {
