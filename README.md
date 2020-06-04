@@ -2,4 +2,10 @@
 
 My personal website / portfolio in an attempt to teach myself React.
 
-It is deployed onto Github pages here: https://iamtomhewitt.github.io/website
+### Getting Started
+
+```bash
+npm install
+npm start
+```
+Browse to http://localhost:3000

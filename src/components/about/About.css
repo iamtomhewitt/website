@@ -1,0 +1,12 @@
+.About {
+	text-align: center;
+	margin: 0px 50px 0px 50px
+}
+
+.About h1 {
+	font-weight: bold;
+}
+
+.About p {
+	font-size: 20px;
+}

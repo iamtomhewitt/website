@@ -1,17 +1,15 @@
-import React, { Component } from "react";
-import Routes from "./Routes";
-import Footer from "./components/Footer";
-import Navigation from "./components/navigation/Navigation";
-import "./App.css";
+import React from 'react';
+import Routes from './Routes';
+import Footer from './components/footer/Footer';
+import Navigation from './components/navigation/Navigation';
+import './App.css';
 
-export default class App extends Component {
-	render() {
-		return (
-			<div>
-				<Navigation />
-				<Routes />
-				<Footer />
-			</div>
-		);
-	}
-}
+const App = () => (
+  <div>
+    <Navigation />
+    <Routes />
+    <Footer />
+  </div>
+);
+
+export default App;

@@ -1,11 +1,19 @@
-#container {
+.Experience {
+	text-align: center;
+}
+
+.Experience .tiles {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 25px 200px;
 }
 
-#title {
-	text-align: center;
+.Experience h1 {
 	font-weight: bold;
-	margin-top: 15px;
+}
+
+@media (max-width: 400px) {
+	.Experience .tiles {
+		margin: auto;
+	}
 }
