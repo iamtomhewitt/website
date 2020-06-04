@@ -5,7 +5,6 @@ import './About.css';
 const About = () => (
   <div className="About">
     <h1>About Me</h1>
-    <hr />
     <p>I'm currently a software developer at William Hill, working on the software for self service betting terminals. </p>
     <p>I play drums, a few video games (as well as make my own on Google Play!).</p>
     <p>And I love a bit of metal.</p>
