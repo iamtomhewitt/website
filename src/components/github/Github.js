@@ -43,10 +43,10 @@ export default class Github extends Component {
     }
 
     return (
-      <div className="noRepos">
+      <div className="Github">
         <h1>I've built</h1>
         <p>
-          No repos found
+          {'No repos found '}
           <span role="img" aria-label="crying face">😢</span>
         </p>
       </div>
