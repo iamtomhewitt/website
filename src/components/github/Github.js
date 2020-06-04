@@ -21,7 +21,7 @@ export default class Github extends Component {
     const { repos } = this.state;
     if (repos.length > 0) {
       return (
-        <div>
+        <div className="Github">
           <h1>I've built</h1>
 
           <div className="reposContainer">

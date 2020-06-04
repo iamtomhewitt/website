@@ -15,7 +15,7 @@ const GithubTile = (props) => {
         <div className="name"><a href={url} target="_blank" rel="noopener noreferrer">{name}</a></div>
         <div className="language">{language}</div>
       </div>
-      
+
       <div className="description">
         <Textfit
           mode="multi"
@@ -28,7 +28,7 @@ const GithubTile = (props) => {
         </Textfit>
       </div>
 
-	  <ul className="stats" key={name}>
+      <ul className="stats" key={name}>
         <li>
           <span role="img" aria-label="bug">🐛</span>
           {` ${bugs}`}
