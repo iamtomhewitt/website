@@ -10,25 +10,12 @@ const GithubTile = (props) => {
   } = props;
 
   return (
-    <div className="repo" id="repo">
+    <div className="repo">
       <div>
         <div className="name"><a href={url} target="_blank" rel="noopener noreferrer">{name}</a></div>
         <div className="language">{language}</div>
       </div>
-      <ul className="stats" key={name}>
-        <li>
-          <span role="img" aria-label="bug">🐛</span>
-          {bugs}
-        </li>
-        <li>
-          <span role="img" aria-label="star">⭐️</span>
-          {stars}
-        </li>
-        <li>
-          <span role="img" aria-label="fork and knife">🍴</span>
-          {forks}
-        </li>
-      </ul>
+      
       <div className="description">
         <Textfit
           mode="multi"
@@ -40,6 +27,21 @@ const GithubTile = (props) => {
           {description}
         </Textfit>
       </div>
+
+	  <ul className="stats" key={name}>
+        <li>
+          <span role="img" aria-label="bug">🐛</span>
+          {` ${bugs}`}
+        </li>
+        <li>
+          <span role="img" aria-label="star">⭐️</span>
+          {` ${stars}`}
+        </li>
+        <li>
+          <span role="img" aria-label="fork and knife">🍴</span>
+          {` ${forks}`}
+        </li>
+      </ul>
     </div>
   );
 };

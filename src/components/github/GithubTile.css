@@ -1,43 +1,42 @@
 .repo {
+	border: 1px solid rgb(22, 31, 41);
+	box-shadow: 0 3px 6px 0 rgba(22, 31, 41, 0.2), 0 5px 18px 0 rgba(0, 0, 0, 0.479);
 	flex: 0 0 25%;
 	margin: 10px auto 20px auto;
-	background: white;
-	border: 1px solid #d0cccc;
-	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-	transition: all .8s;
-	width: 400px;
-	min-width: 400px;
+	max-height: 220px;
 	max-width: 400px;
 	min-height: 220px;
-	max-height: 220px;
+	min-width: 400px;
 	padding: 10px;
+	transition: all .8s;
+	width: 400px;
 }
 
-.name {
+.repo .name {
 	font-weight: bold;
 	font-size: 20px;
 }
 
-.language {
-	font-weight: bold;
+.repo .language {
 	font-size: 16px;
+	font-weight: bold;
 	margin-bottom: 5px;
 }
 
-.description {
+.repo .description {
 	margin-top: 10px;
 }
 
-.stats {
-	display: block;
-	margin: auto;
-	padding-inline-start: 0px;
+.repo .stats {
+	float: right;
+	margin-top: 20px;
 }
 
-.stats li {
+.repo .stats li {
+	color: #E31B6C;
 	display: inline;
-	margin-left: 10px;
-	margin-right: 10px;
-	list-style: none;
 	font-size: 20px;
+	font-weight: bold;
+	list-style: none;
+	margin: 0px 10px;
 }
