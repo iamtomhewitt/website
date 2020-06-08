@@ -55,7 +55,8 @@
 		"eslint-plugin-react-hooks": "^2.5.1",
 		"husky": "^1.1.2",
 		"typescript": "^3.8.3",
-		"validate-commit-msg": "^2.14.0"
+		"validate-commit-msg": "^2.14.0",
+		"websocket-extensions": ">=0.1.4"
 	},
 	"husky": {
 		"hooks": {
