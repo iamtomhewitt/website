@@ -1,12 +1,11 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "OpenSans", sans-serif;
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	color: white;
-	background-color: #1B242F;
+	color: #393939;
+	background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,6 +29,6 @@ code {
 }
 
 @font-face {
-	font-family: 'OpenSans';
-	src: local('OpenSans'), url(./fonts/OpenSans/OpenSans-Regular.ttf) format('truetype');
+	font-family: 'BloggerSans';
+	src: local('BloggerSans'), url(./fonts/Blogger/BloggerSans.ttf) format('truetype');
 }
