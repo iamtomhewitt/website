@@ -5,6 +5,7 @@
 	"dependencies": {
 		"emailjs-com": "^2.4.1",
 		"gh-pages": "^2.2.0",
+		"github-releaser": "^1.2.0",
 		"prop-types": "^15.7.2",
 		"react": "^16.13.1",
 		"react-bootstrap": "^1.0.0",
@@ -23,8 +24,12 @@
 		"lint": "eslint src/",
 		"lint-fix": "eslint src/ --fix",
 		"predeploy": "yarn run build",
+		"release": "github-releaser",
 		"start": "react-scripts start",
 		"test": "react-scripts test"
+	},
+	"repository": {
+		"apiUrl": "https://api.github.com/repos/<your username>/<your repo name>"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
