@@ -1,9 +1,12 @@
 import React from 'react';
-import './Navigation.scss';
 import PropTypes from 'prop-types';
-import { HyperlinkIcon } from '../icons/Hyperlink';
 import { Building } from '../icons/Building';
+import { GithubIcon } from '../icons/Github';
+import { InstagramIcon } from '../icons/Instagram';
+import { LinkedInIcon } from '../icons/LinkedIn';
 import { Location } from '../icons/Location';
+import { StackoverflowIcon } from '../icons/Stackoverflow';
+import './Navigation.scss';
 
 const isActivePage = (current, link) => ((current === link) ? 'navigation-links-active' : 'navigation-links-inactive');
 
@@ -17,16 +20,33 @@ const Navigation = (props) => {
         <img src={`${process.env.PUBLIC_URL}/images/Me.jpg`} alt="" />
         <ul className="navigation-profile-info">
           <li>
-            <HyperlinkIcon />
-            <span><a href="https://github.com/iamtomhewitt">Github</a></span>
-          </li>
-          <li>
             <Building />
             <span>William Hill</span>
           </li>
           <li>
             <Location />
             <span>Leeds</span>
+          </li>
+        </ul>
+        <ul className="navigation-profile-info-icons">
+          <li>
+            <a href="https://github.com/iamtomhewitt">
+              {' '}
+              <GithubIcon />
+            </a>
+          </li>
+          <li>
+            <a href="http://instagram.com/iamtomhewitt"><InstagramIcon /></a>
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/users/3002268/tom?tab=profile">
+              <StackoverflowIcon />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/thomas-hewitt-ab7724a8/">
+              <LinkedInIcon />
+            </a>
           </li>
         </ul>
       </div>
