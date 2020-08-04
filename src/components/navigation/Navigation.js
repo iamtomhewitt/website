@@ -53,9 +53,9 @@ const Navigation = (props) => {
 
       <div className="navigation-links">
         <ul>
-          <li className={isActivePage(currentPageName, 'experience')}>Experience</li>
-          <li className={isActivePage(currentPageName, 'github')}>Github</li>
-          <li className={isActivePage(currentPageName, 'contact')}>Contact</li>
+          <li className={isActivePage(currentPageName, 'experience')}><a href="#/experience">Experience</a></li>
+          <li className={isActivePage(currentPageName, 'github')}><a href="#/github">Github</a></li>
+          <li className={isActivePage(currentPageName, 'contact')}><a href="#/contact">Contact</a></li>
         </ul>
       </div>
 

@@ -1,83 +1,96 @@
 .navigation {
-	background-color: #187bcd;
-	color: #2a9df4;
-	height: 100vh;
-	padding: 0px 30px;
-	width: 16%;
+  background-color: #187bcd;
+  color: #2a9df4;
+  height: 100vh;
+  padding: 0px 30px;
+  width: 16%;
 
-	img {
-		border-radius: 50%;
-		height: 100%;
-		margin-bottom: 20px;
-		margin-top: 20px;
-		width: 100%;
-	}
+  img {
+    border-radius: 50%;
+    height: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
 
-	&-profile {
-		color: white;
+  &-profile {
+    color: white;
 
-		&-info {
-			color: white;
-			padding: 0;
+    &-info {
+      color: white;
+      padding: 0;
 
-			&-icons {
-				display: flex;
-				width: 100%;
-				padding: 0;
-				padding-top: 10px;
-				
-				li {
-					list-style-type: none;
-					padding: 0 5px;
-					margin: auto;
-				}
-			}
+      &-icons {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        padding-top: 10px;
 
-			ul {
-				margin: 0;
-				padding: 0;
-				width: 100%;
-			}
+        li {
+          list-style-type: none;
+          padding: 0 5px;
+          margin: auto;
+        }
+      }
 
-			li {
-				list-style-type: none;
-				margin: 10px 0;
-			}
+      ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
 
-			span {
-				padding-left: 15px;
-			}
+      li {
+        list-style-type: none;
+        margin: 10px 0;
+      }
 
-			a:link,
-			a:visited,
-			a:hover,
-			a:active {
-				color: white;
-				text-decoration: none;
-			}
-		}
-	}
+      span {
+        padding-left: 15px;
+      }
 
-	&-links {
-		bottom: 0;
-		font-size: xx-large;
-		font-weight: bold;
-		margin: auto;
-		position: absolute;
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
 
-		&-active {
-			color: #083E7B;
-		}
+  &-links {
+    bottom: 0;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: auto;
+    position: absolute;
 
-		ul {
-			margin: 0;
-			padding: 0;
-			width: 100%;
-		}
+    &-active {
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        color: #083e7b;
+        text-decoration: none;
+      }
+    }
 
-		li {
-			list-style-type: none;
-			margin: 20px 0;
-		}
-	}
+    ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    li {
+      list-style-type: none;
+      margin: 20px 0;
+    }
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+      text-decoration: none;
+    }
+  }
 }
