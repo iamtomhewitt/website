@@ -36,7 +36,9 @@ const Navigation = (props) => {
             </a>
           </li>
           <li>
-            <a href="http://instagram.com/iamtomhewitt"><InstagramIcon /></a>
+            <a href="http://instagram.com/iamtomhewitt">
+              <InstagramIcon />
+            </a>
           </li>
           <li>
             <a href="https://stackoverflow.com/users/3002268/tom?tab=profile">

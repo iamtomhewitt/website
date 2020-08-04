@@ -1,0 +1,6 @@
+{
+	"rules": {
+		"no-color-literals": 0,
+		"nesting-depth": 0
+	}
+}

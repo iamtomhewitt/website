@@ -1,8 +1,12 @@
+$main-colour: #187bcd;
+$light-colour: #2a9df4;
+
 .navigation {
-  background-color: #187bcd;
-  color: #2a9df4;
+  background-color: $main-colour;
+  color: $light-colour;
   height: 100vh;
-  padding: 0px 30px;
+  min-width: 269px;
+  padding: 0 30px;
   width: 16%;
 
   img {
@@ -14,22 +18,22 @@
   }
 
   &-profile {
-    color: white;
+    color: #fff;
 
     &-info {
-      color: white;
+      color: #fff;
       padding: 0;
 
       &-icons {
         display: flex;
-        width: 100%;
         padding: 0;
         padding-top: 10px;
+        width: 100%;
 
         li {
           list-style-type: none;
-          padding: 0 5px;
           margin: auto;
+          padding: 0 5px;
         }
       }
 
@@ -48,12 +52,14 @@
         padding-left: 15px;
       }
 
-      a:link,
-      a:visited,
-      a:hover,
-      a:active {
-        color: white;
-        text-decoration: none;
+      a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: #fff;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -66,12 +72,14 @@
     position: absolute;
 
     &-active {
-      a:link,
-      a:visited,
-      a:hover,
-      a:active {
-        color: #083e7b;
-        text-decoration: none;
+      a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: #083e7b;
+          text-decoration: none;
+        }
       }
     }
 
@@ -86,11 +94,14 @@
       margin: 20px 0;
     }
 
-    a:link,
-    a:visited,
-    a:hover,
-    a:active {
-      text-decoration: none;
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: #2a9df4;
+        text-decoration: none;
+      }
     }
   }
 }
