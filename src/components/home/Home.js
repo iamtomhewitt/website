@@ -1,11 +1,9 @@
 import React from 'react';
 
-import Navigation from '../navigation/Navigation';
 import './Home.scss';
 
 const Home = () => (
   <div className="home">
-    <Navigation />
     <div className="content">
       <div className="text">
         <h1>

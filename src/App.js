@@ -1,14 +1,12 @@
 import React from 'react';
 import Routes from './Routes';
-import Footer from './components/footer/Footer';
 import Navigation from './components/navigation/Navigation';
-import './App.css';
+import './App.scss';
 
 const App = () => (
-  <div>
+  <div className="app">
     <Navigation />
     <Routes />
-    <Footer />
   </div>
 );
 
