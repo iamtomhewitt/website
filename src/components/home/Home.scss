@@ -2,12 +2,12 @@
   .content {
     display: inline-flex;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 5%;
     margin-top: 10%;
     position: absolute;
+    height: 80.75vh;
 
     .text {
-      min-width: 10px;
 
       h1 {
         font-size: 70px;
@@ -22,7 +22,7 @@
       p {
         font-size: 30px;
         padding-top: 20px;
-        width: 75%;
+        width: 55%;
       }
 
       .highlight {
@@ -30,9 +30,12 @@
       }
     }
 
-    .image {
-      img {
-      }
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 800px;
+      z-index: -1;
     }
   }
 }
