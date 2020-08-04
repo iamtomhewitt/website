@@ -1,0 +1,40 @@
+.home {
+  display: inline-flex;
+
+  .content {
+    display: inline-flex;
+    margin-left: 28%;
+    margin-right: 10%;
+    margin-top: 10%;
+    position: absolute;
+
+    .text {
+      min-width: 10px;
+
+      h1 {
+        font-size: 70px;
+      }
+
+      h2 {
+        color: #187bcd;
+        font-size: 50px;
+        font-weight: lighter;
+      }
+
+      p {
+        font-size: 30px;
+        padding-top: 20px;
+        width: 75%;
+      }
+
+      .highlight {
+        color: #187bcd;
+      }
+    }
+
+    .image {
+      img {
+      }
+    }
+  }
+}
