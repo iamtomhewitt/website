@@ -15,7 +15,7 @@ const Home = () => (
         <p>
           I currently work at William Hill, working towards
           <span className="highlight">&nbsp;full-stack development</span>
-          , on betting terminal software for betting shops.
+          , on terminal software for betting shops.
         </p>
       </div>
 

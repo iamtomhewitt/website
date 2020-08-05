@@ -1,13 +1,15 @@
 .home {
+  height: 100vh;
+
   .content {
     display: inline-flex;
+    margin-bottom: 10%;
     margin-left: 10%;
     margin-right: 5%;
     margin-top: 10%;
-    position: absolute;
-    height: 80.75vh;
 
     .text {
+      width: 75%;
 
       h1 {
         font-size: 70px;
@@ -22,7 +24,6 @@
       p {
         font-size: 30px;
         padding-top: 20px;
-        width: 55%;
       }
 
       .highlight {
@@ -31,8 +32,9 @@
     }
 
     img {
-      position: absolute;
       bottom: 0;
+      margin-right: 2%;
+      position: absolute;
       right: 0;
       width: 800px;
       z-index: -1;

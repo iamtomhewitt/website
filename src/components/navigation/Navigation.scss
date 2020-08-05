@@ -1,5 +1,6 @@
 $main-colour: #187bcd;
 $light-colour: #2a9df4;
+$dark-colour: #0b5c9e;
 
 .navigation {
   background-color: $main-colour;
@@ -77,7 +78,7 @@ $light-colour: #2a9df4;
         &:visited,
         &:hover,
         &:active {
-          color: #083e7b;
+          color: $dark-colour;
           text-decoration: none;
         }
       }
@@ -99,7 +100,7 @@ $light-colour: #2a9df4;
       &:visited,
       &:hover,
       &:active {
-        color: #2a9df4;
+        color: $dark-colour;
         text-decoration: none;
       }
     }
