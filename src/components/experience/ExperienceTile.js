@@ -1,31 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './ExperienceTile.css';
+import './ExperienceTile.scss';
 
 const ExperienceTile = (props) => {
   const {
-    jobTitle, company, time, logo, description, fontSize,
+    jobTitle, company, time, description, fontSize,
   } = props;
 
-  const style = {
-    fontSize: `${fontSize}px`,
-  };
-
   return (
-    <div className="tile">
-      <div className="quickInfo">
+    <li className="tile">
+      <div >
+        <div className="date">{time}</div>
+        <div className="icon"></div>
         <div className="details">
           <div className="jobTitle">{jobTitle}</div>
           <div className="company">{company}</div>
-          <div className="time">{time}</div>
-        </div>
-        <div className="image">
-          <img src={logo} alt="img" />
+          <div className="description">{description}</div>
         </div>
       </div>
-      <div className="description" style={style}>{description}</div>
-    </div>
+    </li>
   );
 };
 
