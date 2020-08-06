@@ -1,8 +1,5 @@
 import React from 'react';
 import ExperienceTile from './ExperienceTile';
-import wh from '../../images/william-hill.png';
-import cgi from '../../images/cgi.png';
-import ntu from '../../images/ntu.png';
 
 import './Experience.scss';
 
