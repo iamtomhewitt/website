@@ -17,7 +17,9 @@ const Navigation = (props) => {
     <div className="navigation">
 
       <div className="navigation-profile">
-        <img src={`${process.env.PUBLIC_URL}/images/Me.jpg`} alt="" />
+        <a href="#/">
+          <img src={`${process.env.PUBLIC_URL}/images/Me.jpg`} alt="" />
+        </a>
         <ul className="navigation-profile-info">
           <li>
             <Building />
