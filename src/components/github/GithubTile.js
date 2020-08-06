@@ -1,63 +1,62 @@
 import React from 'react';
-import { Textfit } from 'react-textfit';
 import PropTypes from 'prop-types';
 
-import './GithubTile.css';
+import './GithubTile.scss';
+import { Bug } from '../icons/Bug';
+import { Star } from '../icons/Star';
+import { Fork } from '../icons/Fork';
 
 const GithubTile = (props) => {
   const {
-    name, language, description, bugs, stars, forks, url,
+    repo: {
+      name, language, description, forks, url,
+    },
   } = props;
+
+  const issues = props.repo.open_issues_count;
+  const stars = props.repo.stargazers_count;
 
   return (
     <div className="repo">
-      <div>
+      <div className="details">
         <div className="name"><a href={url} target="_blank" rel="noopener noreferrer">{name}</a></div>
         <div className="language">{language}</div>
+        <ul className="stats" key={name}>
+          <li>
+            <Bug />
+            <span>{issues}</span>
+          </li>
+          <li>
+            <Star />
+            <span>{stars}</span>
+          </li>
+          <li>
+            <Fork />
+            <span>{forks}</span>
+          </li>
+        </ul>
       </div>
 
-      <div className="description">
-        <Textfit
-          mode="multi"
-          forceSingleModeWidth={false}
-          throttle={50}
-          style={{ height: 85 }}
-          max={20}
-        >
-          {description}
-        </Textfit>
-      </div>
+      <div className="description">{description}</div>
 
-      <ul className="stats" key={name}>
-        <li>
-          <span role="img" aria-label="bug">🐛</span>
-          {` ${bugs}`}
-        </li>
-        <li>
-          <span role="img" aria-label="star">⭐️</span>
-          {` ${stars}`}
-        </li>
-        <li>
-          <span role="img" aria-label="fork and knife">🍴</span>
-          {` ${forks}`}
-        </li>
-      </ul>
     </div>
   );
 };
 
 GithubTile.propTypes = {
-  name: PropTypes.string.isRequired,
-  language: PropTypes.string,
-  description: PropTypes.string.isRequired,
-  bugs: PropTypes.number.isRequired,
-  stars: PropTypes.number.isRequired,
-  forks: PropTypes.number.isRequired,
-  url: PropTypes.string.isRequired,
+  repo: {
+    name: PropTypes.string.isRequired,
+    language: PropTypes.string,
+    description: PropTypes.string.isRequired,
+    open_issues_count: PropTypes.number.isRequired,
+    stargazers_count: PropTypes.number.isRequired,
+    forks: PropTypes.number.isRequired,
+    url: PropTypes.string.isRequired,
+  },
 };
 
 GithubTile.defaultProps = {
-  language: '',
+  repo: { language: '' },
 };
 
 export default GithubTile;
