@@ -9,11 +9,12 @@ import { Fork } from '../icons/Fork';
 const GithubTile = (props) => {
   const {
     repo: {
-      name, language, description, forks, url,
+      name, language, description, forks,
     },
   } = props;
 
   const issues = props.repo.open_issues_count;
+  const url = props.repo.html_url;
   const stars = props.repo.stargazers_count;
 
   return (
