@@ -24,6 +24,7 @@
 		"deploy": "gh-pages -d build",
 		"eject": "react-scripts eject",
 		"lint": "eslint src/",
+		"lint-all": "npm run lint-fix && npm run lint-sass",
 		"lint-fix": "eslint src/ --fix",
 		"lint-sass": "sass-lint 'src/**/*.scss' --verbose --no-exit",
 		"predeploy": "yarn run build",

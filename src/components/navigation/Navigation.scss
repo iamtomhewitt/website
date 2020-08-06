@@ -6,9 +6,10 @@ $dark-colour: #0b5c9e;
   background-color: $main-colour;
   color: $light-colour;
   height: 100vh;
-  min-width: 269px;
+  max-width: 275px;
+  min-width: 275px;
   padding: 0 30px;
-  width: 16%;
+  width: 275px;
 
   img {
     border-radius: 50%;

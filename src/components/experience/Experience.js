@@ -4,13 +4,17 @@ import wh from '../../images/william-hill.png';
 import cgi from '../../images/cgi.png';
 import ntu from '../../images/ntu.png';
 
-import './Experience.css';
+import './Experience.scss';
 
 const Experience = () => (
-  <>
-    <div className="Experience">
-      <h1>I've worked at</h1>
-      <div className="tiles">
+  <div className="experience">
+    <div className="content">
+      <h1>
+        I've
+        <span className="highlight">&nbsp;worked&nbsp;</span>
+        at...
+      </h1>
+      <div className="timeline">
         <ExperienceTile
           jobTitle="Developer"
           company="William Hill"
@@ -50,7 +54,7 @@ const Experience = () => (
         />
       </div>
     </div>
-  </>
+  </div>
 );
 
 export default Experience;
