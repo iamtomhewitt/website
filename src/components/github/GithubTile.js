@@ -24,16 +24,22 @@ const GithubTile = (props) => {
         <div className="language">{language}</div>
         <ul className="stats" key={name}>
           <li>
-            <Bug />
-            <span>{issues}</span>
+            <a href={`https://github.com/iamtomhewitt/${name}/issues`}>
+              <Bug />
+              <span>{issues}</span>
+            </a>
           </li>
           <li>
-            <Star />
-            <span>{stars}</span>
+            <a href={`https://github.com/iamtomhewitt/${name}/stargazers`}>
+              <Star />
+              <span>{stars}</span>
+            </a>
           </li>
           <li>
-            <Fork />
-            <span>{forks}</span>
+            <a href={`https://github.com/iamtomhewitt/${name}/network/members`}>
+              <Fork />
+              <span>{forks}</span>
+            </a>
           </li>
         </ul>
       </div>

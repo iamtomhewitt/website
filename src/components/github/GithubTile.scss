@@ -6,6 +6,16 @@
   min-height: 150px;
   padding: 10px;
 
+  a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: #393939;
+      text-decoration: none;
+    }
+  }
+
   .details {
     max-width: 300px;
     min-width: 300px;
@@ -13,16 +23,6 @@
 
   .name {
     font-size: 28px;
-
-    a {
-      &:link,
-      &:visited,
-      &:hover,
-      &:active {
-        color: #187bcd;
-        text-decoration: none;
-      }
-    }
   }
 
   .language {
