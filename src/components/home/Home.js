@@ -17,8 +17,17 @@ const Home = () => (
           <span className="highlight">&nbsp;full-stack development</span>
           , on terminal software for betting shops.
         </p>
+        <p className="spotify">
+          <h4>Top Spotify Artists</h4>
+          <ul>
+            <li>Enter Shikari</li>
+            <li>Eminem</li>
+            <li>STARSET</li>
+            <li>The Naked And Famous</li>
+            <li>Biffy Clyro</li>
+          </ul>
+        </p>
       </div>
-
       <img src={`${process.env.PUBLIC_URL}/images/Me.jpg`} alt="" />
     </div>
   </div>
