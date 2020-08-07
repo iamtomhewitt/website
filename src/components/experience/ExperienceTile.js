@@ -15,7 +15,14 @@ const ExperienceTile = (props) => {
       <div className="details">
         <div className="company">{company}</div>
         <div className="job-title">{jobTitle}</div>
-        <div className="description">{description}</div>
+        <div className="description">
+          {description.split('\n').map((item) => (
+            <span>
+              {item}
+              <br />
+            </span>
+          ))}
+        </div>
       </div>
     </li>
   );
