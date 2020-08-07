@@ -8,7 +8,6 @@ import Contact from './components/contact/Contact';
 import VRPacmac from './components/privacy policies/VRPacmac';
 import VRTurretDefence from './components/privacy policies/VRTurretDefence';
 import JetDashVR from './components/privacy policies/JetDashVR';
-import About from './components/about/About';
 
 export default () => (
   <Switch>
@@ -16,7 +15,6 @@ export default () => (
     <Route path="/experience" exact component={Experience} />
     <Route path="/github" exact component={Github} />
     <Route path="/contact" exact component={Contact} />
-    <Route path="/about" exact component={About} />
     <Route path="/vr-pac-mac-privacy-policy" exact component={VRPacmac} />
     <Route path="/vr-turret-defence-privacy-policy" exact component={VRTurretDefence} />
     <Route path="/jet-dash-vr-privacy-policy" exact component={JetDashVR} />
