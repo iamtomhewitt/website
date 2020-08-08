@@ -1,4 +1,4 @@
-@import '../../colours.scss';
+@import '../../colours';
 
 .repo {
   border: 1px solid #e1e4e8;
@@ -13,7 +13,7 @@
     &:visited,
     &:hover,
     &:active {
-      color: #393939;
+      color: $text-colour;
       text-decoration: none;
     }
   }
@@ -28,9 +28,9 @@
   }
 
   .language {
+    color: $main-colour;
     font-size: 22px;
     font-weight: lighter;
-    color: $main-colour;
   }
 
   .description {

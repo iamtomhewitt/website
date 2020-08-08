@@ -1,5 +1,7 @@
+@import './colours.scss';
+
 body {
-	color: #393939;
+	color: $text-colour;
 	background-color: white;
 }
 
