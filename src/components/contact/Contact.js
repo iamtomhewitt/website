@@ -84,7 +84,7 @@ export default class Contact extends Component {
 
             <div className="bottom">
               <input className="message" id="message" type="text" value={message} placeholder="Message" onChange={this.handleChange} />
-              <button type="submit" disabled={!this.validateForm()}>Submit</button>
+              <button type="submit" disabled={!this.validateForm()} onClick={this.handleSubmit}>Submit</button>
             </div>
           </div>
         </div>
