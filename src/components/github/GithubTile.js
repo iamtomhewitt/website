@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import './GithubTile.scss';
 import { Bug } from '../icons/Bug';
 import { Star } from '../icons/Star';
 import { Fork } from '../icons/Fork';
+import './GithubTile.scss';
 
 const GithubTile = (props) => {
   const {
@@ -51,15 +50,16 @@ const GithubTile = (props) => {
 };
 
 GithubTile.propTypes = {
-  repo: {
-    name: PropTypes.string.isRequired,
-    language: PropTypes.string,
+  repo: PropTypes.shape({
     description: PropTypes.string.isRequired,
+    forks: PropTypes.number.isRequired,
+    html_url: PropTypes.string.isRequired,
+    language: PropTypes.string,
+    name: PropTypes.string.isRequired,
     open_issues_count: PropTypes.number.isRequired,
     stargazers_count: PropTypes.number.isRequired,
-    forks: PropTypes.number.isRequired,
     url: PropTypes.string.isRequired,
-  },
+  }),
 };
 
 GithubTile.defaultProps = {

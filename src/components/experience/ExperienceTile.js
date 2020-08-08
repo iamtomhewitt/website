@@ -16,8 +16,8 @@ const ExperienceTile = (props) => {
         <div className="company">{company}</div>
         <div className="job-title">{jobTitle}</div>
         <div className="description">
-          {description.split('\n').map((item) => (
-            <span>
+          {description.split('\n').map((item, index) => (
+            <span key={index}>
               {item}
               <br />
             </span>

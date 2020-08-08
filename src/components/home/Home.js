@@ -17,7 +17,7 @@ const Home = () => (
           <span className="highlight">&nbsp;full-stack development</span>
           , on terminal software for betting shops.
         </p>
-        <p className="spotify">
+        <div className="spotify">
           <h4>Top Spotify Artists</h4>
           <ul>
             <li>Enter Shikari</li>
@@ -26,7 +26,7 @@ const Home = () => (
             <li>The Naked And Famous</li>
             <li>Biffy Clyro</li>
           </ul>
-        </p>
+        </div>
       </div>
       <img src={`${process.env.PUBLIC_URL}/images/Me.jpg`} alt="" />
     </div>

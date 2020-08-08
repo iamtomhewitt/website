@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Bug = () => 
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bug" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9E9E9E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-bug" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#9E9E9E" fill="none" strokeLinecap="round" strokeLinejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <path d="M9 9v-1a3 3 0 0 1 6 0v1" />
   <path d="M8 9h8a6 6 0 0 1 1 3v3a5 5 0 0 1 -10 0v-3a6 6 0 0 1 1 -3" />

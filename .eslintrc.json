@@ -27,7 +27,8 @@
 		"max-len": ["error", { "code": 200}],
 		"react/no-unescaped-entities": "off",
 		"jsx-a11y/label-has-associated-control": "off",
-		"react/destructuring-assignment": "warn"
+		"react/destructuring-assignment": "warn",
+		"react/no-array-index-key": "off"
 	},
 	"parser": "babel-eslint"
 }
