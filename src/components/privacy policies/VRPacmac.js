@@ -1,8 +1,8 @@
 import React from 'react';
-import './PrivacyPolicy.css';
+import './PrivacyPolicy.scss';
 
 const VRPacmac = () => (
-  <div id="privacyPolicy">
+  <div className="privacy-policy">
     <h1>VR Pacmac Privacy Policy</h1>
     <p>
       Tom Hewitt built the VR Pac-mac app as a Free app. This SERVICE is provided by Tom Hewitt at no cost and is intended for use as is.

@@ -1,8 +1,8 @@
 import React from 'react';
-import './PrivacyPolicy.css';
+import './PrivacyPolicy.scss';
 
 const VRTurretDefence = () => (
-  <div id="privacyPolicy">
+  <div className="privacy-policy">
     <h1>VR Turret Defence Privacy Policy</h1>
     <p>
       Tom Hewitt built the VR Turret Defence app as an Ad Supported app. This SERVICE is provided by Tom Hewitt at no cost and is intended for use as is.
