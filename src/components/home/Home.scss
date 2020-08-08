@@ -1,3 +1,5 @@
+@import '../../colours.scss';
+
 .home {
   height: 100vh;
 
@@ -16,7 +18,7 @@
       }
 
       h2 {
-        color: #187bcd;
+        color: $main-colour;
         font-size: 50px;
         font-weight: lighter;
       }
@@ -27,7 +29,7 @@
       }
 
       .highlight {
-        color: #187bcd;
+        color: $main-colour;
       }
 
       .spotify {
@@ -35,7 +37,7 @@
         margin-top: 100px;
 
         h4 {
-          color: #187bcd;
+          color: $main-colour;
           font-size: 18px;
         }
 

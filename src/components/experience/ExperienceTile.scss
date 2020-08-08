@@ -1,3 +1,5 @@
+@import '../../colours.scss';
+
 .tile {
   display: flex;
   font-size: 20px;
@@ -16,7 +18,7 @@
   }
 
   .icon {
-    background: #0b5c9e;
+    background: $dark-colour;
     border-radius: 50%;
     margin-top: 20px;
     max-height: 10px;
@@ -32,7 +34,7 @@
     }
 
     .job-title {
-      color: #187bcd;
+      color: $main-colour;
       font-size: 24px;
       font-weight: lighter;
     }

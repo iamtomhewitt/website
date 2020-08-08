@@ -1,3 +1,5 @@
+@import '../../colours.scss';
+
 .experience {
   flex-basis: 100%;
   height: 100vh;
@@ -26,7 +28,7 @@
     }
 
     &::before {
-      background: #2a9df4;
+      background: $light-colour;
       bottom: 0;
       content: '';
       left: 74px;
@@ -39,6 +41,6 @@
   }
 
   .highlight {
-    color: #187bcd;
+    color: $main-colour;
   }
 }

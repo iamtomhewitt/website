@@ -1,3 +1,5 @@
+@import '../../colours.scss';
+
 .contact {
   flex-basis: 100%;
   height: 100vh;
@@ -48,7 +50,7 @@
       button {
         background-color: transparent;
         border: 1px solid rgb(212, 212, 212);
-        color: #187bcd;
+        color: $main-colour;
         margin: 20px;
         width: 440px;
       }
@@ -56,6 +58,6 @@
   }
 
   .highlight {
-    color: #187bcd;
+    color: $main-colour;
   }
 }

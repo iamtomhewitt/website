@@ -1,3 +1,5 @@
+@import '../../colours.scss';
+
 .page-not-found {
   padding-bottom: 50px;
   padding-top: 50px;
@@ -5,7 +7,7 @@
   width: 80vw;
 
   h1 {
-    color: #187bcd;
+    color: $main-colour;
     font-size: 100px;
   }
 

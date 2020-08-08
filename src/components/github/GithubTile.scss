@@ -1,3 +1,5 @@
+@import '../../colours.scss';
+
 .repo {
   border: 1px solid #e1e4e8;
   border-radius: 6px;
@@ -28,6 +30,7 @@
   .language {
     font-size: 22px;
     font-weight: lighter;
+    color: $main-colour;
   }
 
   .description {
