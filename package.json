@@ -52,9 +52,10 @@
 	"homepage": "https://iamtomhewitt.github.io/website",
 	"devDependencies": {
 		"@commitlint/cli": "^9.1.2",
-		"@commitlint/config-conventional": "^8.3.4",
+		"@commitlint/config-conventional": "^10.0.0",
 		"babel-eslint": "^10.1.0",
 		"cz-conventional-changelog": "^2.1.0",
+		"dot-prop": ">=4.2.1",
 		"eslint": "^6.8.0",
 		"eslint-config-airbnb": "^18.1.0",
 		"eslint-plugin-import": "^2.20.2",
