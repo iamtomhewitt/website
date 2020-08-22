@@ -11,10 +11,13 @@
   a {
     &:link,
     &:visited,
-    &:hover,
     &:active {
       color: $text-colour;
       text-decoration: none;
+    }
+
+    &:hover {
+      color: $main-colour;
     }
   }
 
