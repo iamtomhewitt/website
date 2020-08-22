@@ -8,13 +8,9 @@ import './GithubTile.scss';
 const GithubTile = (props) => {
   const {
     repo: {
-      name, language, description, forks,
+      name, language, description, forks, open_issues_count: issues, html_url: url, stargazers_count: stars,
     },
   } = props;
-
-  const issues = props.repo.open_issues_count;
-  const url = props.repo.html_url;
-  const stars = props.repo.stargazers_count;
 
   return (
     <div className="repo">
