@@ -47,7 +47,7 @@ const GithubTile = (props) => {
 
 GithubTile.propTypes = {
   repo: PropTypes.shape({
-    description: PropTypes.string.isRequired,
+    description: PropTypes.string,
     forks: PropTypes.number.isRequired,
     html_url: PropTypes.string.isRequired,
     language: PropTypes.string,
