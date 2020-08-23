@@ -28,7 +28,7 @@ const Home = () => (
           </ul>
         </div>
       </div>
-      <img src={`${process.env.PUBLIC_URL}/images/me-home.png`} alt="" />
+      <img src={`${process.env.PUBLIC_URL}/images/home.png`} alt="" />
     </div>
   </div>
 );
