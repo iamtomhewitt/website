@@ -12,7 +12,7 @@ const Navigation = () => (
 
     <div className="navigation-profile">
       <a href="#/">
-        <img src={`${process.env.PUBLIC_URL}/images/profile.jpg`} alt="" />
+        <img src={`${process.env.PUBLIC_URL}/images/profile.png`} alt="" />
       </a>
       <ul className="navigation-profile-info">
         <li>
