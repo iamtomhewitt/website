@@ -1,0 +1,107 @@
+@import '../../colours';
+
+.navigation {
+  background-color: $main-colour;
+  color: $light-colour;
+  height: 100vh;
+  max-width: 275px;
+  min-width: 275px;
+  padding: 0 30px;
+  width: 275px;
+
+  img {
+    border-radius: 50%;
+    height: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  &-profile {
+    color: #fff;
+
+    &-info {
+      color: #fff;
+      padding: 0;
+
+      &-icons {
+        display: flex;
+        padding: 0;
+        padding-top: 10px;
+        width: 100%;
+
+        li {
+          list-style-type: none;
+          margin: auto;
+          padding: 0 5px;
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      li {
+        list-style-type: none;
+        margin: 10px 0;
+      }
+
+      span {
+        padding-left: 15px;
+      }
+
+      a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &-links {
+    bottom: 0;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: auto;
+    position: absolute;
+
+    &-active {
+      a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: $dark-colour;
+          text-decoration: none;
+        }
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    li {
+      list-style-type: none;
+      margin: 20px 0;
+    }
+
+    a {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $dark-colour;
+        text-decoration: none;
+      }
+    }
+  }
+}

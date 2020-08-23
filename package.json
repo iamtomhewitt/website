@@ -1,18 +1,20 @@
 {
 	"name": "website",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"private": true,
 	"dependencies": {
 		"emailjs-com": "^2.4.1",
 		"gh-pages": "^2.2.0",
+		"github-releaser": "^1.2.0",
+		"node-sass": "^4.14.1",
 		"prop-types": "^15.7.2",
 		"react": "^16.13.1",
 		"react-bootstrap": "^1.0.0",
 		"react-dom": "^16.13.1",
 		"react-router-dom": "^5.1.2",
-		"react-scripts": "^3.4.1",
+		"react-scripts": "^3.4.3",
 		"react-social-icons": "^4.1.0",
-		"react-textfit": "^1.1.0",
+		"sass-lint": "^1.13.1",
 		"set-value": "^3.0.2"
 	},
 	"scripts": {
@@ -21,10 +23,16 @@
 		"deploy": "gh-pages -d build",
 		"eject": "react-scripts eject",
 		"lint": "eslint src/",
+		"lint-all": "npm run lint-fix && npm run lint-sass",
 		"lint-fix": "eslint src/ --fix",
+		"lint-sass": "sass-lint 'src/**/*.scss' --verbose --no-exit",
 		"predeploy": "yarn run build",
+		"release": "npm run deploy && github-releaser",
 		"start": "react-scripts start",
 		"test": "react-scripts test"
+	},
+	"repository": {
+		"apiUrl": "https://api.github.com/repos/iamtomhewitt/website"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -43,10 +51,11 @@
 	},
 	"homepage": "https://iamtomhewitt.github.io/website",
 	"devDependencies": {
-		"@commitlint/cli": "^8.3.5",
-		"@commitlint/config-conventional": "^8.3.4",
+		"@commitlint/cli": "^9.1.2",
+		"@commitlint/config-conventional": "^10.0.0",
 		"babel-eslint": "^10.1.0",
 		"cz-conventional-changelog": "^2.1.0",
+		"dot-prop": ">=4.2.1",
 		"eslint": "^6.8.0",
 		"eslint-config-airbnb": "^18.1.0",
 		"eslint-plugin-import": "^2.20.2",
@@ -54,6 +63,7 @@
 		"eslint-plugin-react": "^7.20.0",
 		"eslint-plugin-react-hooks": "^2.5.1",
 		"husky": "^1.1.2",
+		"serialize-javascript": ">=3.1.0",
 		"typescript": "^3.8.3",
 		"validate-commit-msg": "^2.14.0",
 		"websocket-extensions": ">=0.1.4"

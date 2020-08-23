@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import GithubTile from './GithubTile';
 
-import './Github.css';
+import './Github.scss';
 
 export default class Github extends Component {
   constructor() {
     super();
     this.state = {
+      loading: true,
       repos: [],
     };
   }
@@ -14,41 +15,52 @@ export default class Github extends Component {
   componentDidMount() {
     fetch('https://api.github.com/users/iamtomhewitt/repos?sort=updated')
       .then((response) => response.json())
-      .then((data) => this.setState({ repos: data }));
+      .then((data) => this.setState({ repos: data, loading: false }));
   }
 
   render() {
-    const { repos } = this.state;
-    if (repos.length > 0) {
+    const { repos, loading } = this.state;
+    if (repos && !loading) {
       return (
-        <div className="Github">
-          <h1>I've built</h1>
+        <div className="github">
+          <div className="content">
+            <h1>
+              I've
+              <span className="highlight">&nbsp;built</span>
+              ...
+            </h1>
 
-          <div className="reposContainer">
-            {repos.map((repo) => (
-              <GithubTile
-                key={repo.name}
-                name={repo.name}
-                language={repo.language}
-                description={repo.description}
-                bugs={repo.open_issues}
-                stars={repo.stargazers_count}
-                forks={repo.forks}
-                url={repo.html_url}
-              />
-            ))}
+            <div className="repos">
+              {repos.map((repo) => (
+                <GithubTile key={repo.name} repo={repo} />
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    if (loading) {
+      return (
+        <div className="github">
+          <div className="content">
+            <p>Loading...</p>
           </div>
         </div>
       );
     }
 
     return (
-      <div className="Github">
-        <h1>I've built</h1>
-        <p>
-          {'No repos found '}
-          <span role="img" aria-label="crying face">😢</span>
-        </p>
+      <div className="github">
+        <div className="content">
+          <h1>
+            I've
+            <span className="highlight">&nbsp;built</span>
+            ...
+          </h1>
+
+          <p>No repos found.</p>
+        </div>
       </div>
     );
   }

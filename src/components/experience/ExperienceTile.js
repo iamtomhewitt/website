@@ -1,31 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './ExperienceTile.css';
+import './ExperienceTile.scss';
 
 const ExperienceTile = (props) => {
   const {
-    jobTitle, company, time, logo, description, fontSize,
+    jobTitle, company, time, description,
   } = props;
 
-  const style = {
-    fontSize: `${fontSize}px`,
-  };
-
   return (
-    <div className="tile">
-      <div className="quickInfo">
-        <div className="details">
-          <div className="jobTitle">{jobTitle}</div>
-          <div className="company">{company}</div>
-          <div className="time">{time}</div>
-        </div>
-        <div className="image">
-          <img src={logo} alt="img" />
+    <li className="tile">
+      <span className="date">{time}</span>
+      <div className="icon" />
+      <div className="details">
+        <div className="company">{company}</div>
+        <div className="job-title">{jobTitle}</div>
+        <div className="description">
+          {description.split('\n').map((item, index) => (
+            <span key={index}>
+              {item}
+              <br />
+            </span>
+          ))}
         </div>
       </div>
-      <div className="description" style={style}>{description}</div>
-    </div>
+    </li>
   );
 };
 
@@ -33,9 +32,7 @@ ExperienceTile.propTypes = {
   jobTitle: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
-  logo: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  fontSize: PropTypes.string.isRequired,
 };
 
 export default ExperienceTile;

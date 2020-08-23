@@ -1,8 +1,8 @@
 import React from 'react';
-import './PrivacyPolicy.css';
+import './PrivacyPolicy.scss';
 
 const JetDashVR = () => (
-  <div id="privacyPolicy">
+  <div className="privacy-policy">
     <h1>Jet Dash VR Privacy Policy</h1>
     <p>
       Tom Hewitt built the Jet Dash VR app as an Ad Supported app. This SERVICE is provided by Tom Hewitt at no cost and is intended for use as is.

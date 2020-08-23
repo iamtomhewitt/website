@@ -1,0 +1,24 @@
+@import '../../colours';
+
+.github {
+  flex-basis: 100%;
+  height: 100vh;
+  overflow: auto;
+
+  .content {
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 5%;
+
+    h1 {
+      font-size: 60px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .highlight {
+    color: $main-colour;
+  }
+}
