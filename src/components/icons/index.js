@@ -23,6 +23,20 @@ export const Bug = () =>
     <line x1="20" y1="7" x2="16.25" y2="9.4" />
   </svg>
 
+export const BugMobile = () =>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bug" width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9E9E9E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M9 9v-1a3 3 0 0 1 6 0v1" />
+    <path d="M8 9h8a6 6 0 0 1 1 3v3a5 5 0 0 1 -10 0v-3a6 6 0 0 1 1 -3" />
+    <line x1="3" y1="13" x2="7" y2="13" />
+    <line x1="17" y1="13" x2="21" y2="13" />
+    <line x1="12" y1="20" x2="12" y2="14" />
+    <line x1="4" y1="19" x2="7.35" y2="17" />
+    <line x1="20" y1="19" x2="16.65" y2="17" />
+    <line x1="4" y1="7" x2="7.75" y2="9.4" />
+    <line x1="20" y1="7" x2="16.25" y2="9.4" />
+  </svg>
+
 export const Building = () =>
   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-building-community" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#FFFFFF" fill="none" strokeLinecap="round" strokeLinejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" />
@@ -43,6 +57,16 @@ export const Email = () =>
 export const Fork = () =>
   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-git-fork" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#9E9E9E" fill="none" strokeLinecap="round" strokeLinejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" />
+    <circle cx="12" cy="18" r="2" />
+    <circle cx="7" cy="6" r="2" />
+    <circle cx="17" cy="6" r="2" />
+    <path d="M7 8v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2 -2v-2" />
+    <line x1="12" y1="12" x2="12" y2="16" />
+  </svg>
+
+export const ForkMobile = () =>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-git-fork" width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9E9E9E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
     <circle cx="12" cy="18" r="2" />
     <circle cx="7" cy="6" r="2" />
     <circle cx="17" cy="6" r="2" />
@@ -93,6 +117,12 @@ export const Star = () =>
   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#9E9E9E" fill="none" strokeLinecap="round" strokeLinejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" />
     <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z" />
+  </svg>
+
+export const StarMobile = () =>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="12" height="12" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9E9E9E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
   </svg>
 
 export const Tool = () =>
