@@ -1,13 +1,5 @@
 import React from 'react';
-import { Building } from '../icons/Building';
-import { GithubIcon } from '../icons/Github';
-import { InstagramIcon } from '../icons/Instagram';
-import { LinkedInIcon } from '../icons/LinkedIn';
-import { Location } from '../icons/Location';
-import { StackoverflowIcon } from '../icons/Stackoverflow';
-import { WorkIcon } from '../icons/Work';
-import { EmailIcon } from '../icons/Email';
-import { ToolIcon } from '../icons/Tool';
+import { Building, Email, Github, Instagram, LinkedIn, Location, Stackoverflow, Tool, Work } from '../icons';
 import './Navigation.scss';
 
 const MobileLayout = () => (
@@ -16,22 +8,22 @@ const MobileLayout = () => (
       <ul className="navigation-mobile-icons">
         <li>
           <a href="https://github.com/iamtomhewitt">
-            <GithubIcon />
+            <Github />
           </a>
         </li>
         <li>
           <a href="http://instagram.com/iamtomhewitt">
-            <InstagramIcon />
+            <Instagram />
           </a>
         </li>
         <li>
           <a href="https://stackoverflow.com/users/3002268/tom?tab=profile">
-            <StackoverflowIcon />
+            <Stackoverflow />
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/thomas-hewitt-ab7724a8/">
-            <LinkedInIcon />
+            <LinkedIn />
           </a>
         </li>
       </ul>
@@ -41,17 +33,17 @@ const MobileLayout = () => (
       <ul className="navigation-mobile-icons">
         <li>
           <a href="#/experience">
-            <WorkIcon />
+            <Work />
           </a>
         </li>
         <li>
           <a href="#/github">
-            <ToolIcon />
+            <Tool />
           </a>
         </li>
         <li>
           <a href="#/contact">
-            <EmailIcon />
+            <Email />
           </a>
         </li>
       </ul>
@@ -80,22 +72,22 @@ const DesktopLayout = () => (
         <li>
           <a href="https://github.com/iamtomhewitt">
             {' '}
-            <GithubIcon />
+            <Github />
           </a>
         </li>
         <li>
           <a href="http://instagram.com/iamtomhewitt">
-            <InstagramIcon />
+            <Instagram />
           </a>
         </li>
         <li>
           <a href="https://stackoverflow.com/users/3002268/tom?tab=profile">
-            <StackoverflowIcon />
+            <Stackoverflow />
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/thomas-hewitt-ab7724a8/">
-            <LinkedInIcon />
+            <LinkedIn />
           </a>
         </li>
       </ul>

@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Bug } from '../icons/Bug';
-import { Star } from '../icons/Star';
-import { Fork } from '../icons/Fork';
+import { Bug, Star, Fork } from '../icons';
 import './GithubTile.scss';
 
 const GithubTile = (props) => {
