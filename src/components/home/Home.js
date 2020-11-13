@@ -25,10 +25,10 @@ const Home = () => {
             <h4>Top Spotify Artists</h4>
             <ul>
               <li>Enter Shikari</li>
-              <li>Eminem</li>
               <li>STARSET</li>
-              <li>The Naked And Famous</li>
+              <li>Eminem</li>
               <li>Biffy Clyro</li>
+              <li>The Naked And Famous</li>
             </ul>
           </div>
         </div>
