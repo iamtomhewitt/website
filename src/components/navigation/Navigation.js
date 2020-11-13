@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Building, Email, Github, Instagram, LinkedIn, Location, Stackoverflow, Tool, Work,
+  Building, Email, Github, Home, Instagram, LinkedIn, Location, Stackoverflow, Tool, Work,
 } from '../icons';
 import './Navigation.scss';
 
@@ -34,6 +34,11 @@ const MobileLayout = () => (
       <hr />
 
       <ul className="navigation-mobile-icons">
+        <li>
+          <a href="#/">
+            <Home />
+          </a>
+        </li>
         <li>
           <a href="#/experience">
             <Work />
