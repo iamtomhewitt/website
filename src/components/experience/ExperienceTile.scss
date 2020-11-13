@@ -1,6 +1,7 @@
 @import '../../colours';
 
-.tile {
+.tile,
+%tile {
   display: flex;
   font-size: 20px;
   font-weight: 300;
@@ -25,7 +26,8 @@
     min-width: 10px;
   }
 
-  .details {
+  .details,
+  %details {
     margin: 0 20px;
 
     .company {
@@ -33,10 +35,32 @@
       font-weight: 400;
     }
 
-    .job-title {
+    .job-title,
+    %job-title {
       color: $main-colour;
       font-size: 24px;
       font-weight: lighter;
+    }
+  }
+}
+
+.tile-mobile {
+  @extend %tile;
+  font-size: 15px;
+  margin: 10px 0;
+
+  .details-mobile {
+    @extend %details;
+
+    .company-mobile {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .job-title-mobile {
+      @extend %job-title;
+      font-size: 18px;
     }
   }
 }
