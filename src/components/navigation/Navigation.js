@@ -1,5 +1,8 @@
 import React from 'react';
-import { Building, Email, Github, Instagram, LinkedIn, Location, Stackoverflow, Tool, Work } from '../icons';
+import PropTypes from 'prop-types';
+import {
+  Building, Email, Github, Instagram, LinkedIn, Location, Stackoverflow, Tool, Work,
+} from '../icons';
 import './Navigation.scss';
 
 const MobileLayout = () => (
@@ -48,7 +51,6 @@ const MobileLayout = () => (
         </li>
       </ul>
     </div>
-
   </div>
 );
 
@@ -100,14 +102,16 @@ const DesktopLayout = () => (
         <li><a href="#/contact">Contact</a></li>
       </ul>
     </div>
-
   </div>
 );
 
-const Navigation = () => {
-  const isMobile = window.innerWidth < 480;
-
+const Navigation = (props) => {
+  const { isMobile } = props;
   return isMobile ? <MobileLayout /> : <DesktopLayout />;
+};
+
+Navigation.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
 };
 
 export default Navigation;

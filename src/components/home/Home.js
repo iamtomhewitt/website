@@ -1,10 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Home.scss';
 
-const Home = () => {
-  const isMobile = window.innerWidth < 480;
-  const getClass = (clazz) => (isMobile ? `${clazz}-mobile` : clazz);
+const Home = (props) => {
+  const { isMobile, getClass } = props;
 
   return (
     <div className={getClass('home')}>
@@ -36,6 +36,11 @@ const Home = () => {
       </div>
     </div>
   );
+};
+
+Home.propTypes = {
+  getClass: PropTypes.func.isRequired,
+  isMobile: PropTypes.bool.isRequired,
 };
 
 export default Home;
