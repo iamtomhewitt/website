@@ -8,7 +8,7 @@ const Home = (props) => {
   const { isMobile, getClass } = props;
 
   return (
-    <div className={getClass('home')} test-id='home'>
+    <div className={getClass('home')} test-id="home">
       <div className={getClass('content')}>
         <div className={getClass('text')}>
           <h1>
