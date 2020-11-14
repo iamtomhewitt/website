@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import data from '../../data/home.json';
 
 import './Home.scss';
 
@@ -24,11 +25,7 @@ const Home = (props) => {
           <div className={getClass('spotify')}>
             <h4>Top Spotify Artists</h4>
             <ul>
-              <li>Enter Shikari</li>
-              <li>STARSET</li>
-              <li>Eminem</li>
-              <li>Biffy Clyro</li>
-              <li>The Naked And Famous</li>
+              {data.spotify.map((a) => <li>{a}</li>)}
             </ul>
           </div>
         </div>
