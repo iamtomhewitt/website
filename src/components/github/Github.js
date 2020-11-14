@@ -24,7 +24,7 @@ export default class Github extends Component {
     const { getClass, isMobile } = this.props;
     if (repos && !loading) {
       return (
-        <div className={getClass('github')}>
+        <div className={getClass('github')} test-id="github">
           <div className={getClass('content')}>
             <h1>
               I've
@@ -42,7 +42,7 @@ export default class Github extends Component {
 
     if (loading) {
       return (
-        <div className={getClass('github')}>
+        <div className={getClass('github')} test-id="loading">
           <div className={getClass('content')}>
             <p>Loading...</p>
           </div>
@@ -51,7 +51,7 @@ export default class Github extends Component {
     }
 
     return (
-      <div className={getClass('github')}>
+      <div className={getClass('github')} test-id="no-data">
         <div className={getClass('content')}>
           <h1>
             I've

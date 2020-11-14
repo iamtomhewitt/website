@@ -15,7 +15,7 @@ const GithubTile = (props) => {
   } = props;
 
   return (
-    <div className={getClass('repo')}>
+    <div className={getClass('repo')} test-id="github-tile">
       <div className={getClass('details')}>
         <div className={getClass('name')}><a href={url} target="_blank" rel="noopener noreferrer">{name}</a></div>
         <div className={getClass('language')}>{language}</div>
