@@ -29,7 +29,8 @@
 		"predeploy": "yarn run build",
 		"release": "npm run deploy && github-releaser",
 		"start": "react-scripts start",
-		"test": "jest --coverage"
+		"test": "jest",
+		"test-coverage": "jest --coverage"
 	},
 	"repository": {
 		"apiUrl": "https://api.github.com/repos/iamtomhewitt/website"
