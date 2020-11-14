@@ -9,7 +9,7 @@ const Experience = (props) => {
   const { isMobile, getClass } = props;
 
   return (
-    <div className={getClass('experience')}>
+    <div className={getClass('experience')} test-id="experience">
       <div className={getClass('content')}>
         <h1>
           I've
@@ -18,8 +18,9 @@ const Experience = (props) => {
         </h1>
         <div className={getClass('timeline')}>
           <ul>
-            {data.map((o) => (
+            {data.map((o, i) => (
               <ExperienceTile
+                key={i}
                 isMobile={isMobile}
                 getClass={getClass}
                 jobTitle={o.jobTitle}

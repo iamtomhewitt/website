@@ -9,7 +9,7 @@ const MobileLayout = (props) => {
   } = props;
 
   return (
-    <li className={getClass('tile')}>
+    <li className={getClass('tile')} test-id="experience-tile-mobile">
       <div className="icon" />
       <div className={getClass('details')}>
         <div className={getClass('company')}>{company}</div>
@@ -34,7 +34,7 @@ const DesktopLayout = (props) => {
   } = props;
 
   return (
-    <li className={getClass('tile')}>
+    <li className={getClass('tile')} test-id="experience-tile-desktop">
       <span className="date">{time}</span>
       <div className="icon" />
       <div className={getClass('details')}>
