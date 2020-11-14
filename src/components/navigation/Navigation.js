@@ -6,7 +6,7 @@ import {
 import './Navigation.scss';
 
 const MobileLayout = () => (
-  <div className="navigation-mobile">
+  <div className="navigation-mobile" test-id='navigation-mobile'>
     <div className="navigation-mobile">
       <ul className="navigation-mobile-icons">
         <li>
@@ -60,7 +60,7 @@ const MobileLayout = () => (
 );
 
 const DesktopLayout = () => (
-  <div className="navigation">
+  <div className="navigation" test-id='navigation-desktop'>
     <div className="navigation-profile">
       <a href="#/">
         <img src={`${process.env.PUBLIC_URL}/images/profile.png`} alt="" />
