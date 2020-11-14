@@ -8,7 +8,7 @@ const Home = (props) => {
   const { isMobile, getClass } = props;
 
   return (
-    <div className={getClass('home')}>
+    <div className={getClass('home')} test-id="home">
       <div className={getClass('content')}>
         <div className={getClass('text')}>
           <h1>
@@ -25,7 +25,7 @@ const Home = (props) => {
           <div className={getClass('spotify')}>
             <h4>Top Spotify Artists</h4>
             <ul>
-              {data.spotify.map((a) => <li>{a}</li>)}
+              {data.spotify.map((a, i) => <li key={i}>{a}</li>)}
             </ul>
           </div>
         </div>

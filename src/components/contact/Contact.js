@@ -21,7 +21,7 @@ class Contact extends Component {
     } = this.state;
     const { getClass } = this.props;
     return (
-      <div className={getClass('contact')}>
+      <div className={getClass('contact')} test-id="contact-mobile">
         <div className={getClass('content')}>
           <h1>
             Say
@@ -48,7 +48,7 @@ class Contact extends Component {
     } = this.state;
     const { getClass } = this.props;
     return (
-      <div className={getClass('contact')}>
+      <div className={getClass('contact')} test-id="contact-desktop">
         <div className={getClass('content')}>
           <h1>
             Say
