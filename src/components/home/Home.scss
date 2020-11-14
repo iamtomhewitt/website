@@ -1,9 +1,15 @@
 @import '../../colours';
 
-.home {
+.home,
+.home-mobile {
   height: 100vh;
 
-  .content {
+  .highlight {
+    color: $main-colour;
+  }
+
+  .content,
+  %content {
     display: inline-flex;
     margin-bottom: 10%;
     margin-left: 10%;
@@ -27,35 +33,56 @@
         font-size: 30px;
         padding-top: 20px;
       }
+    }
 
-      .highlight {
+    .spotify,
+    %spotify {
+      font-size: 16px;
+      margin-top: 100px;
+
+      h4 {
         color: $main-colour;
+        font-size: 18px;
       }
 
-      .spotify {
-        font-size: 16px;
-        margin-top: 100px;
-
-        h4 {
-          color: $main-colour;
-          font-size: 18px;
-        }
-
-        ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
       }
     }
 
     img {
       bottom: 0;
-      margin-right: 2%;
+      height: 100vh;
       position: absolute;
       right: 0;
-      width: 700px;
       z-index: -1;
+    }
+  }
+
+  .content-mobile {
+    @extend %content;
+
+    .text-mobile {
+      h1 {
+        font-size: 45px;
+      }
+
+      h2 {
+        color: $main-colour;
+        font-size: 30px;
+        font-weight: lighter;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    .spotify-mobile {
+      @extend %spotify;
+      margin-top: 40px;
     }
   }
 }

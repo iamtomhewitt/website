@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import GithubTile from './GithubTile';
 
 import './Github.scss';
@@ -20,21 +21,20 @@ export default class Github extends Component {
 
   render() {
     const { repos, loading } = this.state;
+    const { getClass, isMobile } = this.props;
     if (repos && !loading) {
       return (
-        <div className="github">
-          <div className="content">
+        <div className={getClass('github')}>
+          <div className={getClass('content')}>
             <h1>
               I've
               <span className="highlight">&nbsp;built</span>
               ...
             </h1>
 
-            <div className="repos">
-              {repos.map((repo) => (
-                <GithubTile key={repo.name} repo={repo} />
-              ))}
-            </div>
+            {repos.map((repo) => (
+              <GithubTile key={repo.name} repo={repo} getClass={getClass} isMobile={isMobile} />
+            ))}
           </div>
         </div>
       );
@@ -42,8 +42,8 @@ export default class Github extends Component {
 
     if (loading) {
       return (
-        <div className="github">
-          <div className="content">
+        <div className={getClass('github')}>
+          <div className={getClass('content')}>
             <p>Loading...</p>
           </div>
         </div>
@@ -51,8 +51,8 @@ export default class Github extends Component {
     }
 
     return (
-      <div className="github">
-        <div className="content">
+      <div className={getClass('github')}>
+        <div className={getClass('content')}>
           <h1>
             I've
             <span className="highlight">&nbsp;built</span>
@@ -65,3 +65,8 @@ export default class Github extends Component {
     );
   }
 }
+
+Github.propTypes = {
+  getClass: PropTypes.func.isRequired,
+  isMobile: PropTypes.bool.isRequired,
+};

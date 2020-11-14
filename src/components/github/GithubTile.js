@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Bug } from '../icons/Bug';
-import { Star } from '../icons/Star';
-import { Fork } from '../icons/Fork';
+import {
+  Bug, Star, StarMobile, Fork, ForkMobile, BugMobile,
+} from '../icons';
 import './GithubTile.scss';
 
 const GithubTile = (props) => {
@@ -10,36 +10,38 @@ const GithubTile = (props) => {
     repo: {
       name, language, description, forks, open_issues_count: issues, html_url: url, stargazers_count: stars,
     },
+    getClass,
+    isMobile,
   } = props;
 
   return (
-    <div className="repo">
-      <div className="details">
-        <div className="name"><a href={url} target="_blank" rel="noopener noreferrer">{name}</a></div>
-        <div className="language">{language}</div>
-        <ul className="stats" key={name}>
+    <div className={getClass('repo')}>
+      <div className={getClass('details')}>
+        <div className={getClass('name')}><a href={url} target="_blank" rel="noopener noreferrer">{name}</a></div>
+        <div className={getClass('language')}>{language}</div>
+        <ul className={getClass('stats')} key={name}>
           <li>
             <a href={`https://github.com/iamtomhewitt/${name}/issues`}>
-              <Bug />
+              {isMobile ? <BugMobile /> : <Bug />}
               <span>{issues}</span>
             </a>
           </li>
           <li>
             <a href={`https://github.com/iamtomhewitt/${name}/stargazers`}>
-              <Star />
+              {isMobile ? <StarMobile /> : <Star />}
               <span>{stars}</span>
             </a>
           </li>
           <li>
             <a href={`https://github.com/iamtomhewitt/${name}/network/members`}>
-              <Fork />
+              {isMobile ? <ForkMobile /> : <Fork />}
               <span>{forks}</span>
             </a>
           </li>
         </ul>
       </div>
 
-      <div className="description">{description}</div>
+      <div className={getClass('description')}>{description}</div>
 
     </div>
   );
@@ -56,6 +58,8 @@ GithubTile.propTypes = {
     stargazers_count: PropTypes.number.isRequired,
     url: PropTypes.string.isRequired,
   }),
+  getClass: PropTypes.func.isRequired,
+  isMobile: PropTypes.bool.isRequired,
 };
 
 GithubTile.defaultProps = {

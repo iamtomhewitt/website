@@ -105,3 +105,34 @@
     }
   }
 }
+
+.navigation-mobile {
+  background-color: $main-colour;
+  color: $light-colour;
+  height: 100vh;
+  width: 50px;
+
+  hr {
+    background-color: #fff;
+  }
+
+  &-icons {
+    padding: 0;
+    text-align: center;
+
+    li {
+      list-style-type: none;
+      padding: 10px 0;
+    }
+  }
+
+  a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

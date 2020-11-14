@@ -1,15 +1,66 @@
 import React from 'react';
-import { Building } from '../icons/Building';
-import { GithubIcon } from '../icons/Github';
-import { InstagramIcon } from '../icons/Instagram';
-import { LinkedInIcon } from '../icons/LinkedIn';
-import { Location } from '../icons/Location';
-import { StackoverflowIcon } from '../icons/Stackoverflow';
+import PropTypes from 'prop-types';
+import {
+  Building, Email, Github, Home, Instagram, LinkedIn, Location, Stackoverflow, Tool, Work,
+} from '../icons';
 import './Navigation.scss';
 
-const Navigation = () => (
-  <div className="navigation">
+const MobileLayout = () => (
+  <div className="navigation-mobile">
+    <div className="navigation-mobile">
+      <ul className="navigation-mobile-icons">
+        <li>
+          <a href="https://github.com/iamtomhewitt">
+            <Github />
+          </a>
+        </li>
+        <li>
+          <a href="http://instagram.com/iamtomhewitt">
+            <Instagram />
+          </a>
+        </li>
+        <li>
+          <a href="https://stackoverflow.com/users/3002268/tom?tab=profile">
+            <Stackoverflow />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/thomas-hewitt-ab7724a8/">
+            <LinkedIn />
+          </a>
+        </li>
+      </ul>
 
+      <hr />
+
+      <ul className="navigation-mobile-icons">
+        <li>
+          <a href="#/">
+            <Home />
+          </a>
+        </li>
+        <li>
+          <a href="#/experience">
+            <Work />
+          </a>
+        </li>
+        <li>
+          <a href="#/github">
+            <Tool />
+          </a>
+        </li>
+        <li>
+          <a href="#/contact">
+            <Email />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+);
+
+const DesktopLayout = () => (
+  <div className="navigation">
     <div className="navigation-profile">
       <a href="#/">
         <img src={`${process.env.PUBLIC_URL}/images/profile.png`} alt="" />
@@ -28,22 +79,22 @@ const Navigation = () => (
         <li>
           <a href="https://github.com/iamtomhewitt">
             {' '}
-            <GithubIcon />
+            <Github />
           </a>
         </li>
         <li>
           <a href="http://instagram.com/iamtomhewitt">
-            <InstagramIcon />
+            <Instagram />
           </a>
         </li>
         <li>
           <a href="https://stackoverflow.com/users/3002268/tom?tab=profile">
-            <StackoverflowIcon />
+            <Stackoverflow />
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/thomas-hewitt-ab7724a8/">
-            <LinkedInIcon />
+            <LinkedIn />
           </a>
         </li>
       </ul>
@@ -56,8 +107,16 @@ const Navigation = () => (
         <li><a href="#/contact">Contact</a></li>
       </ul>
     </div>
-
   </div>
 );
+
+const Navigation = (props) => {
+  const { isMobile } = props;
+  return isMobile ? <MobileLayout /> : <DesktopLayout />;
+};
+
+Navigation.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+};
 
 export default Navigation;

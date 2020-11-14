@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import * as emailjs from 'emailjs-com';
 
 import './Contact.scss';
 
-export default class Contact extends Component {
+class Contact extends Component {
   constructor(props) {
     super(props);
 
@@ -12,6 +13,63 @@ export default class Contact extends Component {
       email: '',
       message: '',
     };
+  }
+
+  MobileLayout = () => {
+    const {
+      email, name, message,
+    } = this.state;
+    const { getClass } = this.props;
+    return (
+      <div className={getClass('contact')}>
+        <div className={getClass('content')}>
+          <h1>
+            Say
+            <span className="highlight">&nbsp;Hi</span>
+            !
+          </h1>
+
+          <div className={getClass('form')}>
+            <input id="name" type="text" value={name} placeholder="Name" onChange={this.handleChange} />
+            <input id="email" type="text" value={email} placeholder="Email" onChange={this.handleChange} />
+            <input className={getClass('message')} id="message" type="text" value={message} placeholder="Message" onChange={this.handleChange} />
+            <div>
+              <button type="submit" disabled={!this.validateForm()} onClick={this.handleSubmit}>Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  DesktopLayout = () => {
+    const {
+      email, name, message,
+    } = this.state;
+    const { getClass } = this.props;
+    return (
+      <div className={getClass('contact')}>
+        <div className={getClass('content')}>
+          <h1>
+            Say
+            <span className="highlight">&nbsp;Hi</span>
+            !
+          </h1>
+
+          <div className={getClass('form')}>
+            <div className={getClass('top')}>
+              <input id="name" type="text" value={name} placeholder="Name" onChange={this.handleChange} />
+              <input id="email" type="text" value={email} placeholder="Email" onChange={this.handleChange} />
+            </div>
+
+            <div className={getClass('bottom')}>
+              <input className="message" id="message" type="text" value={message} placeholder="Message" onChange={this.handleChange} />
+              <button type="submit" disabled={!this.validateForm()} onClick={this.handleSubmit}>Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   handleChange = (event) => {
@@ -44,14 +102,6 @@ export default class Contact extends Component {
     this.clearForm();
   }
 
-  clearForm() {
-    this.setState({
-      name: '',
-      email: '',
-      message: '',
-    });
-  }
-
   validateForm() {
     const {
       email, name, message,
@@ -62,33 +112,23 @@ export default class Contact extends Component {
       && message.length > 0);
   }
 
+  clearForm() {
+    this.setState({
+      name: '',
+      email: '',
+      message: '',
+    });
+  }
+
   render() {
-    const {
-      email, name, message,
-    } = this.state;
-
-    return (
-      <div className="contact">
-        <div className="content">
-          <h1>
-            Say
-            <span className="highlight">&nbsp;Hi</span>
-            !
-          </h1>
-
-          <div className="form">
-            <div className="top">
-              <input id="name" type="text" value={name} placeholder="Name" onChange={this.handleChange} />
-              <input id="email" type="text" value={email} placeholder="Email" onChange={this.handleChange} />
-            </div>
-
-            <div className="bottom">
-              <input className="message" id="message" type="text" value={message} placeholder="Message" onChange={this.handleChange} />
-              <button type="submit" disabled={!this.validateForm()} onClick={this.handleSubmit}>Submit</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
+    const { isMobile } = this.props;
+    return isMobile ? <this.MobileLayout /> : <this.DesktopLayout />;
   }
 }
+
+Contact.propTypes = {
+  getClass: PropTypes.func.isRequired,
+  isMobile: PropTypes.bool.isRequired,
+};
+
+export default Contact;

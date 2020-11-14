@@ -28,7 +28,8 @@
 		"react/no-unescaped-entities": "off",
 		"jsx-a11y/label-has-associated-control": "off",
 		"react/destructuring-assignment": "warn",
-		"react/no-array-index-key": "off"
+		"react/no-array-index-key": "off",
+		"react/jsx-props-no-spreading": "off"
 	},
 	"parser": "babel-eslint"
 }
