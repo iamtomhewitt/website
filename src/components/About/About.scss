@@ -1,0 +1,46 @@
+@import "../../colours.scss";
+
+.about {
+  background-color: white;
+  color: $alt-text-colour;
+  height: 100%;
+  padding: 20px 20%;
+  text-align: center;
+  margin-top: 3%;
+
+  hr {
+    border-top: solid 4px;
+    margin: 15px auto 25px;
+    max-width: 20%;
+    padding: 0;
+  }
+
+  p {
+    font-weight: 200;
+    font-size: 28px;
+  }
+
+  h2,
+  h4 {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+  }
+
+  .spotify {
+    font-size: 18px;
+
+    h4 {
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      margin: 25px 0;
+    }
+    
+    ul {
+      letter-spacing: 3px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
