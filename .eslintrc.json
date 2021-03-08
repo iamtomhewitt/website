@@ -24,14 +24,15 @@
     ],
     "rules": {
 		"indent": ["error", 2],
-		"react/jsx-filename-extension": "off",
-		"max-len": ["error", { "code": 350}],
-		"react/no-unescaped-entities": "off",
 		"jsx-a11y/label-has-associated-control": "off",
-		"react/destructuring-assignment": "warn",
-		"react/no-array-index-key": "off",
+		"max-len": ["error", { "code": 350}],
 		"object-curly-newline": "off",
-		"react/jsx-props-no-spreading": "off"
+		"react/destructuring-assignment": "warn",
+		"react/jsx-filename-extension": "off",
+		"react/jsx-one-expression-per-line": "off",
+		"react/jsx-props-no-spreading": "off",
+		"react/no-array-index-key": "off",
+		"react/no-unescaped-entities": "off"
 	},
 	"parser": "babel-eslint"
 }

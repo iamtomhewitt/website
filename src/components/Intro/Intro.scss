@@ -1,6 +1,8 @@
+@import '../../colours.scss';
+
 .intro {
-  background-color: #41bc9c;
-  color: white; 
+  background-color: $main-colour;
+  color: $main-text-colour;
   font-size: 20px;
   height: 125%;
   padding: 20px 20%;
@@ -20,8 +22,19 @@
     padding: 0;
   }
 
-  h2, h4 {
+  h2,
+  h4 {
     text-transform: uppercase;
     letter-spacing: 10px;
+  }
+
+  .icons {
+    padding-top: 10px;
+    img {
+      width: 3%;
+      border: 0;
+      margin: 0 10px;
+      opacity: 0.85;
+    }
   }
 }
