@@ -1,0 +1,29 @@
+@import "../../colours.scss";
+
+.navigation {
+  background-color: $alt-text-colour;
+  color: $main-text-colour;
+  padding: 20px 25px;
+  position: fixed;
+  width: 100%;
+
+  .name {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    padding: 20px 0;
+    text-transform: uppercase;
+  }
+  
+  .link {
+    float: right;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 9px 15px 0;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $main-colour;
+    }
+  }
+}
