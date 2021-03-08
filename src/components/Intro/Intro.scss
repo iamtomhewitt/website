@@ -1,4 +1,4 @@
-@import '../../colours.scss';
+@import '../../colours';
 
 .intro {
   background-color: $main-colour;
@@ -6,14 +6,14 @@
   font-size: 20px;
   height: 125%;
   padding: 20px 20%;
-  text-align: center;
   padding-top: 100px;
+  text-align: center;
 
   img {
+    border: 5px solid rgba(255, 255, 255, .5);
     border-radius: 50%;
-    border: 5px solid rgba(255, 255, 255, 0.5);
-    width: 20%;
     margin-bottom: 20px;
+    width: 20%;
   }
 
   hr {
@@ -24,17 +24,18 @@
 
   h2,
   h4 {
-    text-transform: uppercase;
     letter-spacing: 10px;
+    text-transform: uppercase;
   }
 
   .icons {
     padding-top: 10px;
+
     img {
-      width: 3%;
       border: 0;
       margin: 0 10px;
-      opacity: 0.85;
+      opacity: .85;
+      width: 3%;
     }
   }
 }

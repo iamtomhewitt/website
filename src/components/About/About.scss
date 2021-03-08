@@ -1,13 +1,14 @@
-@import "../../colours.scss";
+@import '../../colours';
 
 .about {
-  background-color: white;
+  background-color: #ffffff;
   color: $alt-text-colour;
   height: 100%;
-  padding: 20px 20%;
-  text-align: center;
-  margin-top: 3%;
   margin-bottom: 3%;
+  margin-top: 3%;
+  padding: 20px 20%;
+  scroll-margin: 75px;
+  text-align: center;
 
   hr {
     border-top: solid 4px;
@@ -17,14 +18,14 @@
   }
 
   p {
-    font-weight: 200;
     font-size: 28px;
+    font-weight: 200;
   }
 
   h2,
   h4 {
-    text-transform: uppercase;
     letter-spacing: 8px;
+    text-transform: uppercase;
   }
 
   .spotify {
@@ -32,11 +33,11 @@
 
     h4 {
       font-size: 24px;
-      text-transform: uppercase;
       letter-spacing: 5px;
       margin: 25px 0;
+      text-transform: uppercase;
     }
-    
+
     ul {
       letter-spacing: 3px;
       list-style: none;

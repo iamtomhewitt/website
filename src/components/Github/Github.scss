@@ -1,10 +1,11 @@
-@import "../../colours.scss";
+@import '../../colours';
 
 .github {
   background-color: #fff;
   color: $alt-text-colour;
   height: 100%;
   padding: 3% 10%;
+  scroll-margin: 75px;
   text-align: center;
 
   hr {
@@ -14,24 +15,24 @@
   }
 
   h2 {
-    text-transform: uppercase;
     letter-spacing: 10px;
+    text-transform: uppercase;
   }
 
   .row {
     ::before {
-      content: " ";
+      content: ' ';
       display: table;
     }
   }
 
   .repo {
     float: left;
+    font-size: 20px;
     min-height: 1px;
+    padding-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 50px;
-    font-size: 20px;
     position: relative;
     text-align: start;
     width: 50%;
@@ -51,6 +52,7 @@
 
     .stats {
       display: flex;
+
       li {
         font-size: 16px;
         font-weight: 300;
@@ -60,18 +62,18 @@
     }
 
     .title {
-      text-transform: uppercase;
-      letter-spacing: 5px;
       color: $alt-text-colour;
+      letter-spacing: 5px;
+      text-transform: uppercase;
     }
 
     .language {
-      margin-bottom: 10px;
+      color: $main-colour;
       font-size: smaller;
       font-style: italic;
-      letter-spacing: 5px;
       font-weight: 200;
-      color: $main-colour;
+      letter-spacing: 5px;
+      margin-bottom: 10px;
     }
 
     .description {
