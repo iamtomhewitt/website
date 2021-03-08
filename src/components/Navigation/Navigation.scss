@@ -6,6 +6,7 @@
   padding: 20px 25px;
   position: fixed;
   width: 100%;
+  z-index: 100;
 
   .name {
     font-size: 25px;
@@ -14,7 +15,7 @@
     padding: 20px 0;
     text-transform: uppercase;
   }
-  
+
   .link {
     float: right;
     font-weight: bold;
