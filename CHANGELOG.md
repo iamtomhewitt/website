@@ -1,3 +1,9 @@
+## 1.1.2 (09/03/2021) 
+
+
+There are no issues in this release.
+
+
 ## 1.1.1 (14/11/2020) 
 
 
