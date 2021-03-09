@@ -1,4 +1,4 @@
-@import '../../colours';
+@import "../../colours";
 
 .about {
   color: $secondary-colour;
@@ -47,5 +47,11 @@
 
   .highlight {
     color: $text-colour;
+  }
+
+  @media screen and (max-width: 1024px) {
+    hr {
+      max-width: 60%;
+    }
   }
 }

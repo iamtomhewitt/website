@@ -1,4 +1,4 @@
-@import '../../colours';
+@import "../../colours";
 
 .navigation {
   background-color: $secondary-colour;
@@ -21,7 +21,7 @@
     color: rgb(233, 233, 233);
     font-size: 25px;
     margin-left: 20px;
-    opacity: .15;
+    opacity: 0.05;
   }
 
   .link {
@@ -33,6 +33,14 @@
 
     &:hover {
       color: $primary-colour;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation {
+    .link {
+      display: none;
     }
   }
 }

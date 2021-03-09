@@ -1,4 +1,4 @@
-@import '../../colours';
+@import "../../colours";
 
 .github {
   background-color: #fff;
@@ -21,7 +21,7 @@
 
   .row {
     ::before {
-      content: ' ';
+      content: " ";
       display: table;
     }
   }
@@ -78,6 +78,16 @@
     .description {
       color: $secondary-colour;
       font-weight: 200;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .repo {
+      width: 100%;
+    }
+
+    hr {
+      max-width: 60%;
     }
   }
 }
