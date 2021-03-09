@@ -2,7 +2,7 @@
 
 .github {
   background-color: #fff;
-  color: $alt-text-colour;
+  color: $secondary-colour;
   height: 100%;
   padding: 3% 10%;
   scroll-margin: 75px;
@@ -41,12 +41,12 @@
       &:link,
       &:visited,
       &:active {
-        color: $alt-text-colour;
+        color: $text-colour;
         text-decoration: none;
       }
 
       &:hover {
-        color: $main-colour;
+        color: $secondary-colour;
       }
     }
 
@@ -62,13 +62,12 @@
     }
 
     .title {
-      color: $alt-text-colour;
+      color: $secondary-colour;
       letter-spacing: 5px;
       text-transform: uppercase;
     }
 
     .language {
-      color: $main-colour;
       font-size: smaller;
       font-style: italic;
       font-weight: 200;
@@ -77,6 +76,7 @@
     }
 
     .description {
+      color: $secondary-colour;
       font-weight: 200;
     }
   }

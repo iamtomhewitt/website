@@ -1,6 +1,0 @@
-@import "./colours.scss";
-
-body {
-  color: $text-colour;
-  background-color: white;
-}

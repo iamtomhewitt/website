@@ -1,8 +1,8 @@
 @import '../../colours';
 
 .navigation {
-  background-color: $alt-text-colour;
-  color: $main-text-colour;
+  background-color: $secondary-colour;
+  color: $text-colour;
   height: 77px;
   padding: 20px 25px;
   position: fixed;
@@ -32,7 +32,7 @@
     text-transform: uppercase;
 
     &:hover {
-      color: $main-colour;
+      color: $primary-colour;
     }
   }
 }

@@ -1,8 +1,8 @@
 @import '../../colours';
 
 .experience {
-  background-color: $main-colour;
-  color: $main-text-colour;
+  background-color: $primary-colour;
+  color: $text-colour;
   height: 100%;
   padding: 3% 15%;
   scroll-margin: 75px;
@@ -38,7 +38,7 @@
     width: 50%;
 
     .title {
-      color: $alt-text-colour;
+      color: $secondary-colour;
       letter-spacing: 5px;
       text-transform: uppercase;
     }
@@ -55,6 +55,7 @@
     }
 
     .description {
+      color: $secondary-colour;
       font-weight: 200;
     }
   }

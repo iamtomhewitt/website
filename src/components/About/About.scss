@@ -1,8 +1,7 @@
 @import '../../colours';
 
 .about {
-  background-color: #ffffff;
-  color: $alt-text-colour;
+  color: $secondary-colour;
   height: 100%;
   margin-bottom: 3%;
   margin-top: 3%;
@@ -47,6 +46,6 @@
   }
 
   .highlight {
-    color: $main-colour;
+    color: $text-colour;
   }
 }
