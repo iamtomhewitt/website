@@ -1,0 +1,93 @@
+@import "../../colours";
+
+.github {
+  background-color: #fff;
+  color: $secondary-colour;
+  height: 100%;
+  padding: 3% 10%;
+  scroll-margin: 75px;
+  text-align: center;
+
+  hr {
+    border-top: solid 3px;
+    max-width: 20%;
+    padding: 0;
+  }
+
+  h2 {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+  }
+
+  .row {
+    ::before {
+      content: " ";
+      display: table;
+    }
+  }
+
+  .repo {
+    float: left;
+    font-size: 20px;
+    min-height: 1px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    text-align: start;
+    width: 50%;
+
+    a {
+      &:link,
+      &:visited,
+      &:active {
+        color: $text-colour;
+        text-decoration: none;
+      }
+
+      &:hover {
+        color: $secondary-colour;
+      }
+    }
+
+    .stats {
+      display: flex;
+
+      li {
+        font-size: 16px;
+        font-weight: 300;
+        list-style: none;
+        margin: 0 20px 0 0;
+      }
+    }
+
+    .title {
+      color: $secondary-colour;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+
+    .language {
+      font-size: smaller;
+      font-style: italic;
+      font-weight: 200;
+      letter-spacing: 5px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      color: $secondary-colour;
+      font-weight: 200;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .repo {
+      width: 100%;
+    }
+
+    hr {
+      max-width: 60%;
+    }
+  }
+}

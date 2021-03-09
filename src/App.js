@@ -1,16 +1,22 @@
-import React from 'react';
-import Routes from './Routes';
-import Navigation from './components/navigation/Navigation';
-import './App.scss';
+import React, { useRef } from 'react';
+import About from './components/About';
+import Experience from './components/Experience';
+import Github from './components/Github';
+import Intro from './components/Intro';
+import Navigation from './components/Navigation';
 
 const App = () => {
-  const isMobile = window.innerWidth < 480;
-  const getClass = (clazz) => (isMobile ? `${clazz}-mobile` : clazz);
+  const experienceRef = useRef(null);
+  const githubRef = useRef(null);
+  const introRef = useRef(null);
 
   return (
-    <div className="app">
-      <Navigation isMobile={isMobile} getClass={getClass} />
-      <Routes isMobile={isMobile} getClass={getClass} />
+    <div>
+      <Navigation githubRef={githubRef} introRef={introRef} experienceRef={experienceRef} />
+      <Intro />
+      <About reference={introRef} />
+      <Experience reference={experienceRef} />
+      <Github reference={githubRef} />
     </div>
   );
 };
