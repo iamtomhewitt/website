@@ -18,7 +18,11 @@ export default class Github extends Component {
   componentDidMount() {
     fetch('https://api.github.com/users/iamtomhewitt/repos?sort=updated')
       .then((response) => response.json())
-      .then((data) => this.setState({ repos: data, loading: false }));
+      .then((data) => {
+        const hiddenRepos = ['iamtomhewitt', 'sandbox', 'privacy-policies'];
+        const filteredRepos = data.filter((r) => !hiddenRepos.includes(r.name));
+        this.setState({ repos: filteredRepos, loading: false });
+      });
   }
 
   render() {
