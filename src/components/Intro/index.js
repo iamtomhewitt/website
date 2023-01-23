@@ -8,7 +8,7 @@ const Intro = ({ reference }) => (
     <img src={`${process.env.PUBLIC_URL}/images/profile.png`} alt="" />
     <h2>Tom Hewitt</h2>
     <hr />
-    <h4>Software Developer</h4>
+    <h4>Principal Developer</h4>
     <div className="icons">
       <a href="https://github.com/iamtomhewitt"><img alt="Github" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/github.svg" /></a>
       <a href="http://instagram.com/iamtomhewitt"><img alt="Instagram" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/instagram.svg" /></a>

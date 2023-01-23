@@ -10,7 +10,7 @@ const About = ({ reference }) => (
   <div className="about" ref={reference}>
     <h2>About Me</h2>
     <hr />
-    <p>I currently work at William Hill, working towards being a {highlight('full stack developer')}, on terminal software for betting shops. I play {highlight('drums')} and love {highlight('virtual reality gaming')}.</p>
+    <p>I currently work at William Hill as a {highlight('Principal Developer')}, on a variety of frontend and backend projects. I also work with Gitlab Pipelines and build Slackbots to help with day to day work. I play {highlight('drums')} and love {highlight('racing in VR')}.</p>
     <div className="spotify">
       <h4>Top Spotify Artists</h4>
       <ul>
