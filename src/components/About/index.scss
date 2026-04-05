@@ -1,0 +1,18 @@
+.about {
+  &-profile {
+    align-items: center;
+    display: inline-flex;
+
+    &-mini {
+      align-items: flex-start;
+      display: inline-flex;
+      flex-direction: column;
+
+      img {
+        border-radius: 50%;
+        max-width: 200px;
+        width: 20vw;
+      }
+    }
+  }
+}

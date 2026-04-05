@@ -1,0 +1,23 @@
+@import '../../colours';
+
+.masthead {
+  align-items: center;
+  display: inline-flex;
+  font-size: 3cqmin;
+  width: 100%;
+
+  &-link {
+    cursor: pointer;
+    margin-left: 30px;
+    text-transform: lowercase;
+    transition: color 0.5s ease;
+
+    &:nth-of-type(1) {
+      margin-left: auto;
+    }
+
+    &:hover {
+      color: $text-secondary;
+    }
+  }
+}
