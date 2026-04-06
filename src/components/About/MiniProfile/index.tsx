@@ -27,8 +27,6 @@ const quickLinks = [{
 
 const MiniProfile = () => (
   <div className='mini-profile'>
-    <h4>Tom Hewitt</h4>
-
     <img src={profilePicture} />
 
     {quickLinks.map(link => (
@@ -41,7 +39,7 @@ const MiniProfile = () => (
           color={link.colour}
           folder='brands'
           name={link.icon}
-          width='27px'
+          width='24px'
         />
 
         <span>{link.label}</span>

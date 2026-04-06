@@ -9,7 +9,8 @@
     align-items: center;
     cursor: pointer;
     display: inline-flex;
-    margin-top: 2cqmin;
+    font-size: 1.75cqmin;
+    margin-top: 1cqmin;
     width: 100%;
 
     span {
@@ -20,13 +21,6 @@
         color: $text-secondary;
       }
     }
-  }
-
-  h4 {
-    font-size: 24px;
-    margin-bottom: 2cqmin;
-    text-align: center;
-    width: 100%;
   }
 
   img {

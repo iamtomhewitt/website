@@ -1,103 +1,35 @@
-import LazySvg from '../LazySvgLoader';
 import MiniProfile from './MiniProfile';
 
 import './index.scss';
 
-const About = () => {
-  const skills = [{
-    colour: '#3074BF',
-    icon: 'typescript',
-    label: 'TypeScript',
-  }, {
-    colour: '#F0DB4F',
-    icon: 'js',
-    label: 'JavaScript',
-  }, {
-    colour: '#FF9900',
-    icon: 'aws',
-    label: 'AWS',
-  }, {
-    colour: '#ED8B00',
-    icon: 'java',
-    label: 'Java',
-  }, {
-    colour: '#BD1424',
-    icon: 'pied-piper-hat',
-    label: 'Jest',
-  }, {
-    colour: '#68A063',
-    icon: 'node',
-    label: 'NodeJS',
-  }, {
-    colour: '#306998',
-    icon: 'python',
-    label: 'Python',
-  }, {
-    colour: '#61DBFB',
-    icon: 'react',
-    label: 'React',
-  }, {
-    colour: '#FF4785',
-    folder: 'solid',
-    icon: 'book',
-    label: 'Storybook',
-  }, {
-    colour: '#fff',
-    icon: 'github',
-    label: 'Github',
-  }, {
-    colour: '#FC6D26',
-    icon: 'gitlab',
-    label: 'Gitlab',
-  }, {
-    colour: '#F1502F',
-    icon: 'git-alt',
-    label: 'Git',
-  }, {
-    colour: '#00758F',
-    folder: 'solid',
-    icon: 'database',
-    label: 'MySQL',
-  }, {
-    colour: '#0db7ed',
-    icon: 'docker',
-    label: 'Docker',
-  }];
+const About = () => (
+  <div className='about'>
+    <div className='about-profile'>
 
-  return (
-    <div className='about'>
-      <div className='about-profile'>
+      <MiniProfile />
 
-        <MiniProfile />
-
-        <div className='about-info'>
+      <div>
+        <div className='about-intro'>
           <h4>👋🏻 Hey! I'm Tom</h4>
 
-          <div>I currently work at William Hill as a Principal Developer, on a variety of frontend and backend projects. I also work with Gitlab Pipelines and build Slackbots to help with day to day work. I play drums and love racing in VR.</div>
-
-          <h4>Skills</h4>
-
-          <div className='about-skills'>
-            {skills
-              .sort((a, b) => a.label.localeCompare(b.label))
-              .map(skill => (
-                <div className='about-skill' key={skill.icon}>
-                  <LazySvg
-                    color={skill.colour}
-                    folder={(skill.folder as any) || 'brands'}
-                    height='27px'
-                    name={skill.icon}
-                  />
-
-                  <div>{skill.label}</div>
-                </div>
-              ))}
+          <div>
+            I'm currently a Principal Developer at William Hill, working on software that powers Self Service Betting Terminals and staff devices in shops throughout the UK.
           </div>
+
+          <br />
+
+          <div>
+            I'm big into Gitlab CI / automation and Slack based messaging for day to day developer tasks.
+          </div>
+
+          <br />
+
+          <div>I play drums and I'm a big Formula 1 fan!</div>
         </div>
       </div>
-
     </div>
-  );
-};
+
+  </div>
+);
 
 export default About;
