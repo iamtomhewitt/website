@@ -3,6 +3,7 @@ import React from 'react';
 import About from '../About';
 import Masthead from '../Masthead';
 import Skills from '../Skills';
+import Work from '../Work';
 
 import './index.scss';
 
@@ -14,6 +15,8 @@ const App = () => (
       <About />
 
       <Skills />
+
+      <Work />
     </div>
   </div>
 );

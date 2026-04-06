@@ -6,7 +6,7 @@ const Masthead = () => {
     id: 'about',
   }, {
     label: 'Work',
-    id: 'about',
+    id: 'work',
   }, {
     label: 'Things I\'ve Built',
     id: 'about',
