@@ -1,9 +1,11 @@
-@import '../../colours';
+@import "../../colours";
 
 .masthead {
   align-items: center;
+  background-color: $primary-1;
   display: inline-flex;
   font-size: 3cqmin;
+  min-height: 10cqmin;
   width: 100%;
 
   &-link {
@@ -14,6 +16,10 @@
 
     &:nth-of-type(1) {
       margin-left: auto;
+    }
+
+    &:nth-of-type(3) {
+      margin-right: 2cqmin;
     }
 
     &:hover {

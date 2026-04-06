@@ -1,12 +1,48 @@
+@import "../../colours";
+
 .about {
+  padding: 4cqmin;
+
+  h4 {
+    color: $text-secondary;
+    font-size: 20px;
+    margin-top: 0;
+  }
+
   &-profile {
-    align-items: center;
+    align-items: flex-start;
     display: inline-flex;
+    gap: 3cqmin;
+    width: 100%;
 
     &-mini {
       align-items: flex-start;
       display: inline-flex;
       flex-direction: column;
+
+      &-link {
+        align-items: center;
+        cursor: pointer;
+        display: inline-flex;
+        margin-top: 2cqmin;
+        width: 100%;
+
+        span {
+          margin-left: 1cqmin;
+          transition: color 0.5s ease;
+
+          &:hover {
+            color: $text-secondary;
+          }
+        }
+      }
+
+      h4 {
+        font-size: 24px;
+        margin-bottom: 2cqmin;
+        text-align: center;
+        width: 100%;
+      }
 
       img {
         border-radius: 50%;
