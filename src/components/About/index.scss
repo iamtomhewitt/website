@@ -7,4 +7,26 @@
   &-intro {
     margin-bottom: 20px;
   }
+
+  &-spotify {
+    &-data {
+      align-items: flex-start;
+      display: inline-flex;
+      gap: 2cqmin;
+    }
+
+    &-current {
+      width: 60%;
+
+      img {
+        margin-left: auto;
+        margin-top: 6px;
+        width: 100%;
+      }
+    }
+
+    &-top-artists {
+      width: 40%;
+    }
+  }
 }
