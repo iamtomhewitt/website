@@ -24,7 +24,7 @@ const skills = [{
   label: 'Jest',
 }, {
   colour: '#68A063',
-  icon: 'node',
+  icon: 'node-js',
   label: 'NodeJS',
 }, {
   colour: '#306998',
