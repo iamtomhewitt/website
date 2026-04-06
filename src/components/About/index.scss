@@ -1,7 +1,7 @@
 @import "../../colours";
 
 .about {
-  padding: 4cqmin;
+  padding: 0 4cqmin;
 
   h4 {
     color: $text-secondary;
@@ -49,6 +49,39 @@
         max-width: 200px;
         width: 20vw;
       }
+    }
+  }
+
+  &-skills {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-items: center;
+  }
+
+  &-skill {
+    align-items: center;
+    background-color: $primary-2;
+    border: 2px solid $primary-2;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 4rem;
+    padding: 2rem 3rem;
+    text-align: center;
+    transition:
+      transform 0.2s ease,
+      background-color 0.2s ease;
+    width: 4rem;
+
+    svg {
+      margin-bottom: 0.5rem;
+    }
+
+    &:hover {
+      border: 2px solid $text-secondary;
+      transform: translateY(-4px);
     }
   }
 }
