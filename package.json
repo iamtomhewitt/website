@@ -6,6 +6,7 @@
     "build": "tsc -b && vite build",
     "lint": "retail-linter --sourceFolder=./ --type=typescript-react",
     "lint-fix": "retail-linter --sourceFolder=./ --type=typescript-react --fix",
+    "prepare": "husky",
     "start": "vite --host"
   },
   "dependencies": {
