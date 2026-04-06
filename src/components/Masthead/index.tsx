@@ -1,10 +1,20 @@
 import './index.scss';
 
 const Masthead = () => {
-  const links = ['About', 'Work', 'Things I\'ve Built'];
+  const links = [{
+    label: 'About',
+    id: 'about',
+  }, {
+    label: 'Work',
+    id: 'about',
+  }, {
+    label: 'Things I\'ve Built',
+    id: 'about',
+  }];
 
-  const onClick = () => {
-    console.log('todo');
+  const onClick = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView();
   };
 
   return (
@@ -12,10 +22,10 @@ const Masthead = () => {
       {links.map(l => (
         <div
           className='masthead-link'
-          key={l}
-          onClick={onClick}
+          key={l.label}
+          onClick={() => onClick(l.id)}
         >
-          {l}
+          {l.label}
         </div>
       ))}
     </div>
