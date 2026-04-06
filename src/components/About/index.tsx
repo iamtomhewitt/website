@@ -1,27 +1,9 @@
 import LazySvg from '../LazySvgLoader';
-import profilePicture from '../../images/me.png';
+import MiniProfile from './MiniProfile';
 
 import './index.scss';
 
 const About = () => {
-  const quickLinks = [{
-    colour: '#fff',
-    icon: 'github',
-    label: 'Github',
-  }, {
-    colour: '#0966C2',
-    icon: 'linkedin',
-    label: 'LinkedIn',
-  }, {
-    colour: '#EC7C24',
-    icon: 'stack-overflow',
-    label: 'Stack Overflow',
-  }, {
-    colour: '#D62976',
-    icon: 'instagram',
-    label: 'Instagram',
-  }];
-
   const skills = [{
     colour: '#3074BF',
     icon: 'typescript',
@@ -85,24 +67,8 @@ const About = () => {
   return (
     <div className='about'>
       <div className='about-profile'>
-        <div className='about-profile-mini'>
-          <h4>Tom Hewitt</h4>
 
-          <img src={profilePicture} />
-
-          {quickLinks.map(link => (
-            <div className='about-profile-mini-link' key={link.icon}>
-              <LazySvg
-                color={link.colour}
-                folder='brands'
-                name={link.icon}
-                width='27px'
-              />
-
-              <span>{link.label}</span>
-            </div>
-          ))}
-        </div>
+        <MiniProfile />
 
         <div className='about-info'>
           <h4>👋🏻 Hey! I'm Tom</h4>
