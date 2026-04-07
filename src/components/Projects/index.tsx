@@ -16,7 +16,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className='projects'>
+    <div className='projects' id='projects'>
       <h2>Latest projects</h2>
 
       {isLoading && (

@@ -9,13 +9,13 @@ const Masthead = () => {
     id: 'work',
   }, {
     label: 'Things I\'ve Built',
-    id: 'about',
+    id: 'projects',
   }];
 
   const onClick = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({
-      behavior: 'smooth', 
+      behavior: 'smooth',
     });
   };
 
