@@ -1,0 +1,1 @@
+import{n as e,t}from"./index-C15OnoGd.js";e();var n=t(),r=e=>(0,n.jsx)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,viewBox:`0 0 448 512`,...e,children:(0,n.jsx)(`path`,{fill:`currentColor`,d:`M0 32l0 448 448 0 0-448-448 0zM316.5 357.2l-92.5 88.7-92.5-88.7 64.5-184-64.5-86.6 184.9 0-64.4 86.6 64.5 184z`})});export{r as default};
