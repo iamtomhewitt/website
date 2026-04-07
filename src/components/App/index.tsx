@@ -2,6 +2,7 @@ import React from 'react';
 
 import About from '../About';
 import Masthead from '../Masthead';
+import Projects from '../Projects';
 import Skills from '../Skills';
 import Work from '../Work';
 
@@ -17,6 +18,8 @@ const App = () => (
       <Skills />
 
       <Work />
+
+      <Projects />
     </div>
   </div>
 );
