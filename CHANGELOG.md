@@ -1,3 +1,29 @@
+## Version 2.0.0
+Released **07 Apr 2026 10:12:54am** - *23 commits*
+- fbc5924 chore: add CHANGELOG
+- 55756f3 build: update release script
+- 58d69a4 build: update build config
+- 78a64a1 chore: update deployments
+- bb11020 chore: package updates
+- f37edcb chore: update readme
+- 96701fa chore: update navigation
+- 1741b7b chore: add project version
+- 5a7e311 chore: add projects
+- 3d16d21 chore: open linked in on click
+- 30d15c6 chore: update nodejs icon
+- bfb1b3a chore: add work section
+- 3a10387 chore: update favicon
+- 48f08f8 chore: spotify data
+- 6bfa0fc scroll
+- 9977a6d masthead navigation
+- 0f2b18f style: page layout
+- 37e64fd chore: split component
+- b6c52cc style: fix grid styling
+- 208aa8c chore: add skills
+- bb74445 chore: use raw fontawesome files as the cdn does not contain typescript
+- c38cb02 chore: masthead, background
+- 1afd3e4 reinitialise
+
 ## 1.1.4 (23/01/2023) 
 
 
@@ -30,4 +56,4 @@ There are no issues in this release.
 ## 1.1.0 (23/08/2020) 
 
 
-There are no issues in this release.
+There are no issues in this release. 
