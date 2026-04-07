@@ -1,1 +1,0 @@
-import{n as e,t}from"./index-CrNMo0Eu.js";e();var n=t(),r=e=>(0,n.jsx)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,viewBox:`0 0 448 512`,...e,children:(0,n.jsx)(`path`,{fill:`currentColor`,d:`M0 32l214.6 0 0 214.6-214.6 0 0-214.6zm233.4 0l214.6 0 0 214.6-214.6 0 0-214.6zM0 265.4l214.6 0 0 214.6-214.6 0 0-214.6zm233.4 0l214.6 0 0 214.6-214.6 0 0-214.6z`})});export{r as default};
