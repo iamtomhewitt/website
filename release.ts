@@ -57,13 +57,6 @@ import { execSync } from 'child_process';
   fs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2));
   fs.writeFileSync('./package-lock.json', JSON.stringify(pkgLock, null, 2));
 
-  ['frontend', 'backend'].forEach(folder => {
-    const p = `${folder}/package.json`;
-    const subpkg = JSON.parse(fs.readFileSync(p, 'utf8'));
-    subpkg.version = newVersion;
-    fs.writeFileSync(p, JSON.stringify(subpkg, null, 2));
-  });
-
   const now = dateFns.format(new Date(), 'dd MMM yyyy HH:mm:ssa')
     .replace('PM', 'pm')
     .replace('AM', 'am');
