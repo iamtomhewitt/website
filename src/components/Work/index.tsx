@@ -24,7 +24,11 @@ const Work = () => {
 
       <div className='work-grid'>
         {items.map((item, i) => (
-          <div className='work-item' key={i}>
+          <div
+            className='work-item'
+            key={i}
+            onClick={() => window.open('https://www.linkedin.com/in/thomas-hewitt-ab7724a8/', '_blank')}
+          >
             <div className='work-item-title'>{item.jobTitle}</div>
 
             <div className='work-item-subtitle'>
