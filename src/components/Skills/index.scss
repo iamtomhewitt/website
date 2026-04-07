@@ -1,0 +1,35 @@
+@import "../../colours";
+
+.skills {
+  &-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 140px));
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  &-skill {
+    align-items: center;
+    background-color: $primary-2;
+    border: 2px solid $primary-2;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: center;
+    transition:
+      transform 0.2s ease,
+      background-color 0.2s ease;
+
+    svg {
+      margin-bottom: 0.5rem;
+    }
+
+    &:hover {
+      border: 2px solid $text-secondary;
+      transform: translateY(-4px);
+    }
+  }
+}

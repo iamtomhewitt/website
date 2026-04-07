@@ -1,0 +1,89 @@
+@import "../../colours";
+
+.projects {
+  &-loading {
+    animation: spin 0.75s linear infinite;
+    color: $text-secondary;
+  }
+
+  &-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  &-project {
+    align-items: center;
+    background-color: #2b2c3c;
+    border: 2px solid #2b2c3c;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    transition:
+      transform 0.2s ease,
+      background-color 0.2s ease;
+
+    &-counter {
+      align-items: center;
+      display: inline-flex;
+      gap: 4px;
+      margin-left: auto;
+      width: auto !important;
+    }
+
+    &-count {
+      color: $text-secondary;
+      margin-right: 6px;
+      width: 16px;
+    }
+
+    div {
+      width: 100%;
+    }
+
+    &-heading {
+      align-items: center;
+      display: inline-flex;
+    }
+
+    &-title {
+      color: $text-secondary;
+      font-size: 1.25rem;
+    }
+
+    &-subtitle {
+      font-size: 1rem;
+    }
+
+    &-description {
+      margin-top: 1rem;
+    }
+
+    &:hover {
+      border: 2px solid $text-secondary;
+      transform: translateY(-4px);
+    }
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

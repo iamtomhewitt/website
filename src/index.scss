@@ -1,6 +1,28 @@
-@import './colours';
+@import "./colours";
 
 body {
-  background-color: #fff;
-  color: $text-colour;
+  background:
+    linear-gradient(to bottom, transparent calc(100% - 1px), $primary-2 calc(100% - 1px)),
+    linear-gradient(to right, $primary-1 calc(100% - 1px), $primary-2 calc(100% - 1px));
+  background-attachment: fixed;
+  background-position: top;
+  background-size: 90px 90px;
+  color: $text-primary;
+  font-family: Outfit, sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  margin: 0;
+  padding: 0 4cqmin;
+}
+
+h2 {
+  color: $text-secondary;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+h4 {
+  color: $text-secondary;
+  font-size: 20px;
+  margin-top: 0;
 }
