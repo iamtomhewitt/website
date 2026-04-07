@@ -1,3 +1,11 @@
+## Version 2.0.1
+Released **07 Apr 2026 11:58:30am** - *5 commits*
+- 1e5b062 style: for mobile, reverse mini profile icons
+- 439ef00 style: fix widths
+- 21d74d1 style: update skills for mobile use
+- c0add3c style: make about and mini profile more mobile responsive
+- 058756f fix: make music section mobile responsive
+
 ## Version 2.0.0
 Released **07 Apr 2026 10:12:54am** - *23 commits*
 - fbc5924 chore: add CHANGELOG
@@ -56,4 +64,4 @@ There are no issues in this release.
 ## 1.1.0 (23/08/2020) 
 
 
-There are no issues in this release. 
+There are no issues in this release.  
