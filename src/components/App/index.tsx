@@ -5,6 +5,7 @@ import Masthead from '../Masthead';
 import Projects from '../Projects';
 import Skills from '../Skills';
 import Work from '../Work';
+import pkg from '../../../package.json';
 
 import './index.scss';
 
@@ -21,6 +22,8 @@ const App = () => (
 
       <Projects />
     </div>
+
+    <div className='app-version'>{pkg.version}</div>
   </div>
 );
 
