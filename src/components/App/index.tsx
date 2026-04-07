@@ -2,6 +2,7 @@ import React from 'react';
 
 import About from '../About';
 import Masthead from '../Masthead';
+import Music from '../Music';
 import Projects from '../Projects';
 import Skills from '../Skills';
 import Work from '../Work';
@@ -15,6 +16,8 @@ const App = () => (
 
     <div className='app-sections'>
       <About />
+
+      <Music />
 
       <Skills />
 
