@@ -23,8 +23,6 @@ const About = () => (
         <br />
 
         <div>I play drums and I'm a big Formula 1 fan!</div>
-
-        <br />
       </div>
     </div>
 

@@ -25,27 +25,32 @@ const quickLinks = [{
   url: 'http://instagram.com/iamtomhewitt',
 }];
 
-const MiniProfile = () => (
-  <div className='mini-profile'>
-    <img src={profilePicture} />
+const MiniProfile = () => {
+  return (
+    <div className='mini-profile'>
+      <img src={profilePicture} />
 
-    {quickLinks.map(link => (
-      <div
-        className='mini-profile-link'
-        key={link.icon}
-        onClick={() => window.open(link.url, '_blank')}
-      >
-        <LazySvg
-          color={link.colour}
-          folder='brands'
-          name={link.icon}
-          width='24px'
-        />
+      <div className='mini-profile-links'>
+        {quickLinks.map(link => (
+          <div
+            className='mini-profile-link'
+            key={link.icon}
+            onClick={() => window.open(link.url, '_blank')}
+          >
 
-        <span>{link.label}</span>
+            <LazySvg
+              color={link.colour}
+              folder='brands'
+              name={link.icon}
+              width='24px'
+            />
+
+            <span>{link.label}</span>
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
-);
+    </div>
+  );
+};
 
 export default MiniProfile;

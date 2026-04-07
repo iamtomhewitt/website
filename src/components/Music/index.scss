@@ -11,16 +11,11 @@
   }
 
   &-current {
-    width: 60%;
-
     img {
       margin-left: auto;
       margin-top: 6px;
+      max-width: 500px;
       width: 100%;
     }
-  }
-
-  &-top-artists {
-    width: 40%;
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import About from '../About';
 import Masthead from '../Masthead';
@@ -10,24 +11,30 @@ import pkg from '../../../package.json';
 
 import './index.scss';
 
-const App = () => (
-  <div className='app'>
-    <Masthead />
+const App = () => {
+  const isMobile = useMediaQuery({
+    query: '(max-width: 430px)',
+  });
 
-    <div className='app-sections'>
-      <About />
+  return (
+    <div className='app'>
+      {!isMobile && <Masthead />}
 
-      <Music />
+      <div className='app-sections'>
+        <About />
 
-      <Skills />
+        <Music />
 
-      <Work />
+        <Skills />
 
-      <Projects />
+        <Work />
+
+        <Projects />
+      </div>
+
+      <div className='app-version'>{pkg.version}</div>
     </div>
-
-    <div className='app-version'>{pkg.version}</div>
-  </div>
-);
+  );
+};
 
 export default App;
