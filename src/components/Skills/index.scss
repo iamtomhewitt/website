@@ -7,6 +7,11 @@
     grid-template-columns: repeat(auto-fit, minmax(140px, 140px));
     justify-content: center;
     padding: 0 1rem;
+
+    @media only screen and (width >= 320px) and (width <= 430px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &-skill {
@@ -22,6 +27,10 @@
     transition:
       transform 0.2s ease,
       background-color 0.2s ease;
+
+    @media only screen and (width >= 320px) and (width <= 430px) {
+      max-width: 280px;
+    }
 
     svg {
       margin-bottom: 0.5rem;
