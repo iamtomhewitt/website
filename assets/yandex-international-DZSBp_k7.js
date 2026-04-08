@@ -1,0 +1,1 @@
+import{n as e,t}from"./index-3oOo0jgQ.js";e();var n=t(),r=e=>(0,n.jsx)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,viewBox:`0 0 320 512`,...e,children:(0,n.jsx)(`path`,{fill:`currentColor`,d:`M129.5 512l0-166.1-111-297.9 55.8 0 81.8 229.7 94.1-277.7 51.3 0-120.7 347.8 0 164.2-51.3 0z`})});export{r as default};
