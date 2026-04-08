@@ -25,7 +25,7 @@ const Music = () => {
           <ul>
             <li>Sleep Token</li>
 
-            <li>Northlan</li>
+            <li>Northlane</li>
 
             <li>Enter Shikari</li>
 
