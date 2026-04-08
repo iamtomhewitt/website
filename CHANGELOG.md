@@ -1,3 +1,7 @@
+## Version 2.0.2
+Released **08 Apr 2026 09:35:30am** - *1 commits*
+- 7433be0 fix: typo
+
 ## Version 2.0.1
 Released **07 Apr 2026 11:58:30am** - *5 commits*
 - 1e5b062 style: for mobile, reverse mini profile icons
@@ -64,4 +68,4 @@ There are no issues in this release.
 ## 1.1.0 (23/08/2020) 
 
 
-There are no issues in this release.  
+There are no issues in this release.   
