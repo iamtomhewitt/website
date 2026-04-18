@@ -1,3 +1,9 @@
+## Version 2.1.0
+Released **18 Apr 2026 12:00:44pm** - *3 commits*
+- a3ed7b7 chore: update title for projects
+- fbe3a11 chore: sort github projects by stars then by updated_at
+- 91c4056 style: update css for mobile devices
+
 ## Version 2.0.2
 Released **08 Apr 2026 09:35:30am** - *1 commits*
 - 7433be0 fix: typo
@@ -68,4 +74,4 @@ There are no issues in this release.
 ## 1.1.0 (23/08/2020) 
 
 
-There are no issues in this release.   
+There are no issues in this release.    
