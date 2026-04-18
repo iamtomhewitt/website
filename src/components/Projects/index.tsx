@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import LazySvg from '../LazySvgLoader';
+import { GithubRepo } from '../../types/github';
 
 import './index.scss';
 
@@ -11,7 +12,16 @@ const Projects = () => {
   useEffect(() => {
     fetch('https://api.github.com/users/iamtomhewitt/repos?sort=updated')
       .then(data => data.json())
-      .then(json => setProjects(json))
+      .then((json: GithubRepo[]) => {
+        const sorted = json.sort((a, b) => {
+          if (b.stargazers_count !== a.stargazers_count) {
+            return b.stargazers_count - a.stargazers_count;
+          }
+
+          return new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime();
+        });
+        setProjects(sorted);
+      })
       .finally(() => setIsLoading(false));
   }, []);
 
