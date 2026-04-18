@@ -27,7 +27,7 @@ const Projects = () => {
 
   return (
     <div className='projects' id='projects'>
-      <h2>Latest projects</h2>
+      <h2>Things I've Built</h2>
 
       {isLoading && (
         <LazySvg
