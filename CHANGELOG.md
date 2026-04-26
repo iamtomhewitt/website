@@ -1,3 +1,8 @@
+## Version 3.1.0
+Released **26 Apr 2026 19:06:10pm** - *2 commits*
+- 7c6ac85b chore: remove the masthead
+- 8e199dff style: update css for mobile on skills
+
 ## Version 3.0.0
 Released **18 Apr 2026 22:05:14pm** - *1 commits*
 - d8531339 feat: add spotify api
@@ -78,4 +83,4 @@ There are no issues in this release.
 ## 1.1.0 (23/08/2020) 
 
 
-There are no issues in this release.     
+There are no issues in this release.      
