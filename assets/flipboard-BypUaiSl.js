@@ -1,1 +1,0 @@
-import{n as e,t}from"./index-DO3rb_WU.js";e();var n=t(),r=e=>(0,n.jsx)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,viewBox:`0 0 448 512`,...e,children:(0,n.jsx)(`path`,{fill:`currentColor`,d:`M0 32l0 448 448 0 0-448-448 0zM358.4 211.2l-89.6 0 0 89.6-89.6 0 0 89.6-89.6 0 0-268.8 268.8 0 0 89.6z`})});export{r as default};
