@@ -5,11 +5,11 @@
   "scripts": {
     "build": "rm -rf dist && tsc -b && vite build",
     "deploy": "gh-pages -d dist",
-    "lint": "retail-linter --sourceFolder=./ --type=typescript-react",
-    "lint-fix": "retail-linter --sourceFolder=./ --type=typescript-react --fix",
+    "lint": "iamtomhewitt-linter --sourceFolder=./ --type=typescript-react",
+    "lint-fix": "iamtomhewitt-linter --sourceFolder=./ --type=typescript-react --fix",
     "predeploy": "npm run build",
     "prepare": "husky",
-    "release": "ts-node --esm release.ts && npm run deploy",
+    "release": "npm run deploy && iamtomhewitt-releaser",
     "start": "vite --host"
   },
   "dependencies": {
@@ -22,13 +22,13 @@
   "devDependencies": {
     "@commitlint/cli": "20.5.0",
     "@commitlint/config-conventional": "20.5.0",
+    "@iamtomhewitt/linter": "1.0.6",
+    "@iamtomhewitt/releaser": "1.0.6",
     "@types/node": "25.2.3",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.1",
-    "date-fns": "4.1.0",
     "husky": "9.1.7",
-    "retail-linter": "3.4.0",
     "sass-embedded": "1.99.0",
     "ts-node": "10.9.2",
     "typescript": "5.9.3",
