@@ -1,3 +1,8 @@
+## Version 3.2.0
+Released **4th May 2026 04:21:03pm** - *2 commits*
+- 48133ee2 deps: update dependencies
+- 124bc8fa chore: update package scripts and registry
+
 ## Version 3.1.0
 Released **26 Apr 2026 19:06:10pm** - *2 commits*
 - 7c6ac85b chore: remove the masthead
@@ -83,4 +88,4 @@ There are no issues in this release.
 ## 1.1.0 (23/08/2020) 
 
 
-There are no issues in this release.      
+There are no issues in this release.       
