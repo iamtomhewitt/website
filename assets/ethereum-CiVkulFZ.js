@@ -1,1 +1,0 @@
-import{n as e,t}from"./index-vk6Gh68u.js";e();var n=t(),r=e=>(0,n.jsx)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,viewBox:`0 0 320 512`,...e,children:(0,n.jsx)(`path`,{fill:`currentColor`,d:`M311.9 260.8L160 353.6 8 260.8 160 0 311.9 260.8zM160 383.4L8 290.6 160 512 312 290.6 160 383.4z`})});export{r as default};
