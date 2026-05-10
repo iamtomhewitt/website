@@ -68,6 +68,11 @@
       margin-top: 1rem;
     }
 
+    &-updated-at {
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+    }
+
     &:hover {
       border: 2px solid $text-secondary;
       transform: translateY(-4px);
