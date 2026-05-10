@@ -1,3 +1,9 @@
+## Version 3.3.0
+Released **10th May 2026 09:11:38pm** - *3 commits*
+- 222c73eb style: sort by last updated and show a last updated label
+- 439d5263 chore: update packages
+- 4551265c deps: update package
+
 ## Version 3.2.0
 Released **4th May 2026 04:21:03pm** - *2 commits*
 - 48133ee2 deps: update dependencies
@@ -88,4 +94,4 @@ There are no issues in this release.
 ## 1.1.0 (23/08/2020) 
 
 
-There are no issues in this release.       
+There are no issues in this release.        
