@@ -38,8 +38,8 @@ const Projects = () => {
       <div className='projects-grid'>
         {projects.map(project => {
           const lastUpdatedData = dateFns.intervalToDuration({
-            start: new Date(project.updated_at),
             end: new Date(),
+            start: new Date(project.updated_at),
           });
           const lastUpdatedLabel = Object.entries(lastUpdatedData)
             .map(([duration, amount]) => `${amount} ${duration}`)
