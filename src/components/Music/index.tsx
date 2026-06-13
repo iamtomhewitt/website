@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
 
 import LazySvg from '../LazySvgLoader';
 
@@ -10,11 +9,6 @@ const Music = () => {
     artists: [],
     tracks: [],
   });
-
-  const isMobile = useMediaQuery({
-    query: '(max-width: 430px)',
-  });
-  const theme = isMobile ? 'natemoo-re' : 'spotify-embed';
 
   useEffect(() => {
     const fetchData = async () => {
@@ -35,9 +29,7 @@ const Music = () => {
 
       <div className='music-data'>
         <div className='music-current'>
-          <div>I'm currently listening to: </div>
-
-          <img src={`https://spotify-github-profile.kittinanx.com/api/view?uid=6uewucrtqgm5qi9s7vafweivn&cover_image=true&theme=${theme}`} />
+          <img src='https://9smygdfh2g.execute-api.eu-west-1.amazonaws.com/api/now-playing-badge' />
         </div>
 
         <div className='music-top-items'>

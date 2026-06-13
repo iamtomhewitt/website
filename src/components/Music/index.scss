@@ -3,6 +3,7 @@
     align-items: flex-start;
     display: inline-flex;
     gap: 2cqmin;
+    margin-bottom: 20px;
     width: 100%;
 
     @media only screen and (width >= 320px) and (width <= 430px) {
@@ -12,16 +13,20 @@
 
   &-current {
     img {
-      background-color: #fff;
       border-radius: 10px;
-      margin-left: auto;
-      margin-top: 6px;
-      max-width: 500px;
+      margin: auto;
+      max-width: 400px;
       width: 100%;
     }
 
-    @media only screen and (width > 430px) {
-      width: 50%;
+    @media only screen and (width >= 320px) and (width <= 430px) {
+      display: inline-flex;
+      width: 100%;
+
+      img {
+        margin-bottom: 20px;
+        width: 50%;
+      }
     }
   }
 
