@@ -1,3 +1,8 @@
+## Version 3.4.0
+Released **13th Jun 2026 03:35:51pm** - *2 commits*
+- 39a00e30 style: use my spotify api badge
+- 7daf5145 chore: update package
+
 ## Version 3.3.0
 Released **10th May 2026 09:11:38pm** - *3 commits*
 - 222c73eb style: sort by last updated and show a last updated label
@@ -94,4 +99,4 @@ There are no issues in this release.
 ## 1.1.0 (23/08/2020) 
 
 
-There are no issues in this release.        
+There are no issues in this release.         
